@@ -40,8 +40,9 @@ add_library($libname $libsrcname.cpp)
 # in main cmakelist
 # add dir to tree, add include
 add_subdirectory($subdirname)
-target
+target_include_directories($projname PUBLIC ${PROJECT_SOURCE_DIR}/$sub)
 
-# tips
-
+# tips！
+# all the variable can be "/path" /path ${var} "${var}"
+# but message("xxx")
 </pre><p><br></p>
