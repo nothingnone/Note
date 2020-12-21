@@ -54,6 +54,12 @@ if(USE_MYMATH)
   list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
 endif()
 # same in .h
+# ifdef USE_MYMATH
+#   include "MathFunctions.h"
+# endif
+# same in .h.in
+# cmakedefine USE_MYMATH
+# use "cmake "
 
 
 </pre><p><br></p>
