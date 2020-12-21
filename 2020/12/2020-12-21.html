@@ -33,4 +33,12 @@ mkdir build
 cd build
 cmake ../
 cmake --build
+
+# add a lib in a subdir
+# in subdir, new a cmakelist.txt and input -&gt; below
+add_library($libname $libsrc.cpp)
+# in main cmakelist
+# add dir to tree, add include
+add_sub
+
 </pre><p><br></p>
