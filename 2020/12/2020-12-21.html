@@ -46,7 +46,7 @@ target_include_directories($projname PUBLIC ${PROJECT_SOURCE_DIR}/$subdirname)
 # all the variable can be "/path" /path ${var} "${var}"
 # but message("xxx")
 
-# macro to add a lib
+# macro to use a lib
 option(USE_MYMATH "Use tutorial provided math implementation" ON)
 if(USE_MYMATH)
   add_subdirectory(MathFunctions)
@@ -59,7 +59,11 @@ endif()
 # endif
 # same in .h.in
 # cmakedefine USE_MYMATH
-# use "cmake "
+# use "cmake ../ -DUSE_MYMATH=OFF"
+
+# if there is a lib in proj, before lib been built,
+# main source can't be built
+# use depend 
 
 
 </pre><p><br></p>
