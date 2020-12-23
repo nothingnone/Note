@@ -66,10 +66,9 @@ endif()
 # add --&gt;&gt; "depend" &lt;&lt;-- relation
 
 # find a 3rdparty package
-
-
-# add include path for proj
-add_include)directories($projname
+find_package(
+    # add include path for proj
+  add_include)directories($projname
   subdir/include/
   ${pack_INCLUDE_DIRS}
   /usr/include/)
