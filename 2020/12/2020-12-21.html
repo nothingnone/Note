@@ -40,7 +40,6 @@ add_library($libname $libsrcname.cpp)
 # in main cmakelist
 # add dir to tree, add include
 add_subdirectory($subdirname)
-
 target_include_directories($projname PUBLIC ${PROJECT_SOURCE_DIR}/$subdirname)
 
 # tips！
@@ -66,6 +65,10 @@ endif()
 # main source can't be built
 # add --&gt;&gt; "depend" &lt;&lt;-- relation
 
+# add include path for proj
+add_include)directories($projname
+
+)
 # link dynamic and static libraries
 target_link_libraries($)
 </pre><p><br></p>
