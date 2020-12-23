@@ -79,6 +79,8 @@ add_include_directories($projname
   ${pack_INCLUDE_DIRS}
   /usr/include/)
 
+# use link_directories to indicate path to find lib, but 
+
 # link static and dynatic lib
 target_link_libraries($execname 
   ${pack_LIBRARIES}
@@ -88,5 +90,6 @@ target_link_libraries($execname
   -Wl,-start-group
   /path/to/.a
   -Wl,--end-group
-  # if use link 
+  # if use link_directories
+  .a/.so)
 </pre><p><br></p>
