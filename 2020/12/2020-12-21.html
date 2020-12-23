@@ -84,5 +84,6 @@ target_link_libraries($execname
   ${pack_LIBRARIES}
   /path/to/.so
   # if .a need to link .a, and depended lib should behind lib which depend it
-  #   -Wl -start-group
+  #usually, difficult to arrange them, use -Wl group
+  -Wl -start-group
 </pre><p><br></p>
