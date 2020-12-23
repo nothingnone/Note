@@ -67,13 +67,14 @@ endif()
 
 # find a 3rdparty package
 set($packname_DIR /path/to/config.cmake)
-find_package($packname 
-
+find_package($packname MODULE
+  $modname
+  
 
 
 
 # add include path for proj
-add_include)directories($projname
+add_include_directories($projname
   subdir/include/
   ${pack_INCLUDE_DIRS}
   /usr/include/)
