@@ -86,7 +86,7 @@ link_directories(/path/to/lib)
 # link static and dynatic lib
 target_link_libraries($execname 
   ${pack_LIBRARIES}
-  # if there is a .so version conflict, use 
+  # if conflict happens, solve and note here
   /path/to/.so
   # if .a need to link .a, and depended lib should behind lib which depend it
   # usually, difficult to arrange them, use -Wl group
