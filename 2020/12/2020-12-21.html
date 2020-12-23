@@ -81,6 +81,8 @@ add_include_directories($projname
 
 # link static and dynatic lib
 target_link_libraries($execname 
-  
-  
+  ${pack_LIBRARIES}
+  /path/to/.so
+  # if .a need to link .a
+  -WL 
 </pre><p><br></p>
