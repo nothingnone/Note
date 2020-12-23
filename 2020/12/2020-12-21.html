@@ -6,8 +6,8 @@ project($projectname)
 # attention! if change cmakelist, build dir (cache dir) should be del
 
 # add sourcefile
-add_executable($projectname $srcdir/sourcefilename;$another)
-add_executable($projectname 
+add_executable($execname $srcdir/sourcefilename;$another)
+add_executable($execname 
   $sourcefilename
   $another
 )
@@ -20,9 +20,9 @@ project($projname VERSION 1.0)
 configure_file(t.h.in t.h)
 # above -&gt; a binary willbe created
 # add binary
-target_include_directories($projname PUBLIC
+target_include_directories($execname PUBLIC
                             ${PROJECT_BINARY_DIR})
-# above -&gt; during compile, @x@ will be repalced by var in CMAEK
+# above -&gt; during compile, @var@ will be repalced by var in CMAEK
 
 # expilict c++ shandard
 set(CMAKE_CXX_STANDARD 11)
