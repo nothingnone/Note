@@ -81,11 +81,12 @@ add_include_directories($projname
 
 # use link_directories to indicate path to find lib, if can't find lib in target_link_libraries
 # but do recommand to use it
-link_direc
+link_directories(/path/to/lib)
 
 # link static and dynatic lib
 target_link_libraries($execname 
   ${pack_LIBRARIES}
+  # if there is a .so 
   /path/to/.so
   # if .a need to link .a, and depended lib should behind lib which depend it
   # usually, difficult to arrange them, use -Wl group
