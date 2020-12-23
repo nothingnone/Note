@@ -68,12 +68,10 @@ endif()
 # find a 3rdparty package
 # if pack is a office pack, no need to set $packname_DIR to find packconfig.cmake 
 set($packname_DIR /path/to/config.cmake)
-# MODULE: declare module to find; REQUIRED: find pack and i
+# MODULE: declare module to find; REQUIRED: find pack and its dependence
 find_package($packname MODULE
   $modname
   REQUIRED)
-
-
 
 # add include path for proj
 add_include_directories($projname
