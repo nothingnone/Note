@@ -79,7 +79,9 @@ add_include_directories($projname
   ${pack_INCLUDE_DIRS}
   /usr/include/)
 
-# use link_directories to indicate path to find lib, if can't find lib in target
+# use link_directories to indicate path to find lib, if can't find lib in target_link_libraries
+# but do recommand to use it
+link_direc
 
 # link static and dynatic lib
 target_link_libraries($execname 
@@ -87,7 +89,7 @@ target_link_libraries($execname
   /path/to/.so
   # if .a need to link .a, and depended lib should behind lib which depend it
   # usually, difficult to arrange them, use -Wl group
-  # use group can also indicate which .a to link .a
+  # use group can also indicate which .a to link .a, to avoid version conflict
   -Wl,-start-group
   /path/to/.a
   -Wl,--end-group
