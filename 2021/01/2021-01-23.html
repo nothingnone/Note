@@ -1,1 +1,1 @@
-<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-8bb92f69-d385-4d87-97c9-12e9558bd78c"></attachment><ul><li>io_service 必须在accept 和connect开始后运行</li><li>sprintf 会添加终止符！注意overflow</li><li>shared_from_this用于提供自身共享指针</li></ul><p><br></p>
+<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-8bb92f69-d385-4d87-97c9-12e9558bd78c"></attachment><ul><li>io_service 必须在accept 和connect开始后运行</li><li>sprintf 会添加终止符！注意overflow</li><li>shared_from_this用于提供自身共享指针，多用于移交所有权。但其要求全局至少存在共享指针实例。注意不要在类的构造函数中调用</li></ul><p><br></p>
