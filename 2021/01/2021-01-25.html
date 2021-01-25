@@ -75,4 +75,4 @@ int main()
 &nbsp; &nbsp; }
 &nbsp; &nbsp; return 0;
 }
-</pre><ul><li>由其实现有以下注意：</li><li class="ql-indent-1">用make<em>shared构造对象并令shared_</em>ptr指向它。一旦构造出智能指针，指针的转移可以看做时所有权的移交、分享。不要用原指针指向、构造<em>shared_</em>ptr，尤其注意不要把指向栈的指针赋给<em>shared_</em>ptr。<em>shared_</em>ptr的</li></ul><p><br></p>
+</pre><ul><li>由其实现有以下注意：</li><li class="ql-indent-1">用make<em>shared构造对象并令sharedptr指向它。一旦构造出智能指针，指针的转移可以看做时所有权的移交、分享。不要用原指针指向、构造shared</em>ptr，尤其注意不要把指向栈的指针赋给<em>shared_</em>ptr。<em>shared_</em>ptr的使用规范为，当需要创建对象并分享、移交控制权时，用make_shared创建、初始化<em>shared_</em>ptr，后续对该对象的所有指针操作均用<em>shared_</em>ptr完成，注意与常指针的隔离。</li><li class="ql-indent-1">编写的程序为简单实现，并不保证线程安全。通过采用辅助类的方式保存引用信息，多个智能指针共享该对象，内部的操作存在危险，因为++i，</li></ul><p><br></p>
