@@ -1,1 +1,79 @@
-<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-99698725-e524-4d42-aee0-f3d1a919326e"></attachment><ul><li>大小端。一个int 0x12345678，四个字节。倘若大端，则大端在前，低地址保存高字节，0x12 34 56 78，通讯多采用该方法。而小端相反，为0x78 56 34 12，优点在与便于转换，一般都是小端。</li><li>shared pointer 实现</li><li class="ql-indent-1"><br></li></ul><p><br></p>
+<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-99698725-e524-4d42-aee0-f3d1a919326e"></attachment><ul><li>大小端。一个int 0x12345678，四个字节。倘若大端，则大端在前，低地址保存高字节，0x12 34 56 78，通讯多采用该方法。而小端相反，为0x78 56 34 12，优点在与便于转换，一般都是小端。</li><li>shared pointer 实现</li></ul><pre class="ql-syntax" spellcheck="false">template &lt;typename T&gt;
+class shared_point;
+
+template &lt;typename T&gt;
+class assit_p
+{
+private:
+&nbsp; &nbsp; friend class shared_point&lt;T&gt;;&nbsp; &nbsp;
+&nbsp; &nbsp; assit_p(T* ptr)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; :p(ptr)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; ,count(1)
+&nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; std::cout &lt;&lt; *p &lt;&lt;"\tnew"&lt;&lt; std::endl;
+&nbsp; &nbsp; }
+&nbsp; &nbsp; ~assit_p()
+&nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; std::cout &lt;&lt; *p &lt;&lt;"\tdelete"&lt;&lt; std::endl;
+&nbsp; &nbsp; &nbsp; &nbsp; delete p;
+&nbsp; &nbsp; }
+&nbsp; &nbsp; T *p;
+&nbsp; &nbsp; int count;
+};
+
+template &lt;typename T&gt;
+class shared_point
+{
+public:
+&nbsp; &nbsp; shared_point(T* ptr)
+&nbsp; &nbsp; &nbsp; &nbsp; :p(new assit_p&lt;T&gt;(ptr))
+&nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; //&nbsp;
+&nbsp; &nbsp; }
+&nbsp; &nbsp; shared_point(const shared_point&lt;T&gt; &amp;sptr)
+&nbsp; &nbsp; &nbsp; &nbsp; :p(sptr.p)&nbsp; //attention! this use private member
+&nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; ++p-&gt;count;
+&nbsp; &nbsp; &nbsp; &nbsp; std::cout &lt;&lt; *(p-&gt;p)&lt;&lt;"\tadd,now\t"&lt;&lt;p-&gt;count&lt;&lt; std::endl;
+&nbsp; &nbsp; }
+&nbsp; &nbsp; // = operator return operated result ref
+&nbsp; &nbsp; shared_point&amp; operator=(const shared_point&lt;T&gt; &amp;sptr)
+&nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; ++sptr.p-&gt;count;
+&nbsp; &nbsp; &nbsp; &nbsp; std::cout &lt;&lt; *(sptr.p-&gt;p)&lt;&lt;"\tadd,now\t"&lt;&lt;sptr.p-&gt;count&lt;&lt; std::endl;
+&nbsp; &nbsp; &nbsp; &nbsp; if(0 == --p-&gt;count)
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; delete p;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; p = sptr.p;
+&nbsp; &nbsp; &nbsp; &nbsp; return *this;
+&nbsp; &nbsp; }
+&nbsp; &nbsp; ~shared_point()
+&nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; if(0 == -- p-&gt;count)
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; delete p;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; else
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; std::cout &lt;&lt; *(p-&gt;p)&lt;&lt;"\tminus,now\t"&lt;&lt;p-&gt;count&lt;&lt; std::endl;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; }
+private:
+&nbsp; &nbsp; assit_p&lt;T&gt;* p;&nbsp;
+};
+
+int main()
+{
+&nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; shared_point&lt;double&gt; ptr1(new double(3.1415926));
+&nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; shared_point&lt;double&gt; ptr2(ptr1);
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; shared_point&lt;double&gt; ptr3(new double(6.28));
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ptr3 = ptr2;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; }
+&nbsp; &nbsp; return 0;
+}
+
+</pre><ul><li class="ql-indent-1"><br></li></ul><p><br></p>
