@@ -1,6 +1,8 @@
-<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-8fe9fe54-9e73-466f-b3f6-e5f15c7ebf15"></attachment><ul><li>把程序写好，把测试搞好。</li><li>对于采用迭代器标准编写的程序，last 的指针、迭代器要指向最后一个元素的（下一个地址），默认允许这样的指针，称之为末尾指针，而包含的区间为[first, last)</li><li>对其。每种变量默认以其长度对其，即其地址必须是其长度字节数的整数倍。当指定对其长度，有以下规则：其对其的地址（储存空间的起始地址）必须是较小（相比于默认长度和设定对其长度）对其长度的整数倍（向后偏移直到符合要求）；对其后的终止地址必须时较大对其长度的整数倍（向后补\0直到满足对其要求）。其中struct的默认对其长度为最长成员长度，这主要针对于在struct中包含struct（不建议这么写）。</li><li>设定对其长度</li></ul><pre class="ql-syntax" spellcheck="false">#pragma pack(push)
+<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-8fe9fe54-9e73-466f-b3f6-e5f15c7ebf15"></attachment><ul><li>把程序写好，把测试搞好。</li><li>对于采用迭代器标准编写的程序，last 的指针、迭代器要指向最后一个元素的（下一个地址），默认允许这样的指针，称之为末尾指针，而包含的区间为[first, last)</li><li>对其。每种变量默认以其长度对其，即其地址必须是其长度字节数的整数倍。当指定对其长度，有以下规则：其对其的地址（储存空间的起始地址）必须是较小（相比于默认长度和设定对其长度）对其长度的整数倍（向后偏移直到符合要求）；对其后的终止地址必须时较大对其长度的整数倍（向后补\0直到满足对其要求）。其中struct的默认对其长度为最长成员长度，这主要针对于在struct中包含struct（不建议这么写）。总而言之，必须理解其对其方式。最好在使用内存式结构体时，先进性实验。</li><li>设定对其长度，示例。</li></ul><pre class="ql-syntax" spellcheck="false">#pragma pack(push)
+#pragma pack(4)
 struct s
 {
   char a;
 }
+#pragma pack(pop)
 </pre><p><br></p>
