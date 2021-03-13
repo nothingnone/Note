@@ -1,0 +1,6 @@
+<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-8337714c-8a64-4516-9b28-682708788a40"></attachment><pre class="ql-syntax" spellcheck="false">docker run -it --name ros -v /home/pc/Work/TEB:/workdir/catkin_ws slam_ros_build:latest /bin/bash
+or 
+docker run -d --name ros -v /home/pc/Work/TEB:/workdir/catkin_ws slam_ros_build:latest
+docker start ros &amp; docker exec -it ros /bin/bash
+if no need to change bind dir, use one container!
+</pre><p><br></p>

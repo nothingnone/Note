@@ -1,0 +1,9 @@
+<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-bcd86305-7831-4bf0-9812-c23b5a97d3ba"></attachment><ul><li>python中快排的实现</li></ul><pre class="ql-syntax" spellcheck="false">def quicksort(arr):
+    if len(arr) &lt;= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x &lt; pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x &gt; pivot]
+    return quicksort(left) + middle + quicksort(right)
+</pre><p><br></p>

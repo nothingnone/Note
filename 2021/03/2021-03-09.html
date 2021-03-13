@@ -1,0 +1,5 @@
+<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-b30c4472-0607-4d56-901d-98f035e3fc87"></attachment><pre class="ql-syntax" spellcheck="false"># use boost::once_flag to ensure thread safe
+static boost::once_flag flag = ONCE_INIT(0);
+boost::call_once(&amp;InitFuncRunOnce, flag);  
+
+</pre><p><br></p>
