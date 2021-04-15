@@ -11,3 +11,5 @@
 3. 实现costmap的可视化。
 4. kplanner中实现clearElevGateCB()函数，清除电梯口区域。
 5. move_base中，由于elev target导致coredump，因此采用normal target测试。考虑到更换地图的可能，初步采用在设值goal时就清一次。后续可在kplanner中添加标志位，只有当地图更新时才清除。
+6. 修改电梯地图
+7. 修改机器型号配置
