@@ -14,3 +14,7 @@ x. 实现costmap的可视化。
 x. 修改电梯地图, 76
 7. 修改机器型号配置
 8. 阅读kplanner中的地图更新流程。
+
+### 4-16
+可视化
+[] kplanner静态层与合成层的可视化.在kplanner中添加static_costmap_pub_, combine_costmap_pub. 在makeplan加锁前将这两个消息pub出去.
