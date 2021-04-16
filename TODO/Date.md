@@ -16,5 +16,16 @@ x. 修改电梯地图, 76
 8. 阅读kplanner中的地图更新流程。
 
 ### 4-16
-可视化
-[] kplanner静态层与合成层的可视化.在kplanner中添加static_costmap_pub_, combine_costmap_pub. 在makeplan加锁前将这两个消息pub出去.
+可视
+- [x] kplanner静态层与合成层的可视化.在kplanner中添加static_costmap_pub_, combine_costmap_pub. 在makeplan加锁前将这两个消息pub出去.
+占用太大，fail。
+- [ ] 等待测试环境，等测试结果。
+- [x] 整理代码
+- [ ] 形成文档。
+
+### 4-17
+仿真集成测试
+- [ ] 整合SVG装置模型,确定第一版参数,并整合测试.
+- [ ] 规范化参数.
+- [ ] 微调参数.
+- [ ] 最好能够完成仿真工作。
