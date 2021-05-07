@@ -1,4 +1,5 @@
-<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-10819f4a-34a5-4a80-a6f9-7fcc6fad7cc1"></attachment><pre class="ql-syntax" spellcheck="false"># must!
+```makefile
+# must!
 cmake_minimum_required(VERSION 3.x)
 # must!
 project($projectname)
@@ -18,11 +19,11 @@ project($projname VERSION 1.0)
 # t.h
 # #define a @$projname_VERSION_MAJOR@ 
 configure_file(t.h.in t.h)
-# above -&gt; a binary willbe created
+# above -> a binary willbe created
 # add binary
 target_include_directories($execname PUBLIC
                             ${PROJECT_BINARY_DIR})
-# above -&gt; during compile, @var@ will be repalced by var in CMAEK
+# above -> during compile, @var@ will be repalced by var in CMAEK
 
 # expilict c++ shandard
 set(CMAKE_CXX_STANDARD 11)
@@ -35,7 +36,7 @@ cmake ../
 cmake --build
 
 # add a lib in a subdir
-# in subdir, new a cmakelist.txt and input -&gt; below
+# in subdir, new a cmakelist.txt and input -> below
 add_library($libname $libsrcname.cpp)
 # in main cmakelist
 # add dir to tree, add include
@@ -63,7 +64,7 @@ endif()
 
 # if there is a lib in proj, before lib been built,
 # main source can't be built
-# add --&gt;&gt; "depend" &lt;&lt;-- relation
+# add -->> "depend" <<-- relation
 
 # find a 3rdparty package
 # if pack is a office pack, no need to set $packname_DIR to find packconfig.cmake 
@@ -99,4 +100,13 @@ target_link_libraries($execname
 
 # attention! Boost lib version is very important!
 # avoid boost lib ver conflict! and pay attention to lib deps on boost! Symbol conflict in compile, lib load problem in runtime!
-</pre><p><br></p><attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-641ab615-a56f-4800-835c-bb63dd01ff62"></attachment><p><br></p>
+
+# add compile options
+add_compile_options(-std=c++11)
+## or
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fpic")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpic")
+
+#add link options
+add_link_options(-pg)	# gprof, to generate gmon.out
+```
