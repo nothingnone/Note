@@ -78,8 +78,10 @@ change:
 - 当超时/goal丢弃时,需要resetflag.难以实现,且易错.当接收到新的goal,进行一次检查,若是电梯goal或者其他则resetflag.添加resetElevProcessFlag(), 并在handlenewgoal()时invoke.
 - once inside elev. if inside and flag false, publish and setflag.
 - once 出电梯. if out and flag false, publish and setflag.
-- 0: once inside; 1:get goal accurate; 2: get goal inaccurate; 3: once outside elev.
+- 0: once inside; 1:Reach Around!(get goal accurate); 2: Not reach!(get goal inaccurate); 3: once outside elev; 4:spin not finished!
 - 问题!在电梯内放弃了任务,或有其他状况, 如何保证正确.
 - 宽松goal参数会导致较大的刹车加速度，此时速度并非0；
 - teb计算goalreached()，在computeVelocityCommands()中计算速度位置是否满足goal_tolerance.若是,则在goalreached()将标志位置1.而每次调用computeVelocityCommands()都会进行检查.目前的问题是spinTowardGoal()是否会导致goalReachedCheck()失效.
+- teb增大tolerance带来的问题是，即使我能够走到目标点，也不会准确的走到目标点。而我们希望达到的结果是，在尽可能走到目标点的前提下终止。
+- spinAround 超时设置在spin指令处. 
 
