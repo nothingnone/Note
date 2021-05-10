@@ -64,3 +64,22 @@ x. 修改电梯地图, 76
 - [] 调研teb算法的评价与细节。
 - 性能优化方向：cost计算量，导数计算量。迭代次数。超图元素数量。策略上带来的计算量。
 
+### 5-8
+change:
+- 头文件,源文件添加pub,sub
+- 新建分支f-elev-signal，在其上开发.
+- 接受信号后旋转，CB函数spinAroudToGoal()
+- 开发spinAroundToGoal()函数,目前使用setSpinAroundAngle()方法,只需调用一次即可旋转到位。其原理和细节有待进一步确认。
+- 添加receive_loc_signal_flag_, elev_loc_signal callback func. set flag.
+- teb, judge elevmode, increase xy_goal_tolerance,add yaw_goal_tolerance to pi/2 to ignore pose orientation.attention!
+- 当处于旋转过程中，需要精确规划，降低tolerance。如何编写代码？useElevMode(false)
+- 在旋转过程中，同样需要计算超时,一旦超时,按失败处理.
+- 修改goalReachedCheck(),电梯目标点需检查方向是否一致
+- 当超时/goal丢弃时,需要resetflag.难以实现,且易错.当接收到新的goal,进行一次检查,若是电梯goal或者其他则resetflag.添加resetElevProcessFlag(), 并在handlenewgoal()时invoke.
+- once inside elev. if inside and flag false, publish and setflag.
+- once 出电梯. if out and flag false, publish and setflag.
+- 0: once inside; 1:get goal accurate; 2: get goal inaccurate; 3: once outside elev.
+- 问题!在电梯内放弃了任务,或有其他状况, 如何保证正确.
+- 宽松goal参数会导致较大的刹车加速度，此时速度并非0；
+- teb计算goalreached()，在computeVelocityCommands()中计算速度位置是否满足goal_tolerance.若是,则在goalreached()将标志位置1.而每次调用computeVelocityCommands()都会进行检查.目前的问题是spinTowardGoal()是否会导致goalReachedCheck()失效.
+
