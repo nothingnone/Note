@@ -1,3 +1,4 @@
+- [] 给出新充电桩打样的设计信息。
 - [] teb算法性能优化.profile, costmap converter, opt graph-iter-cost.
 - [] 红外成像与激光传感器融合.可以显著提高定位精度
 - [] DBscan
