@@ -86,5 +86,5 @@ change:
 - spinAround 超时设置在spin指令处. 
 
 - 5-20
-- [] 处理一下bag的bug
+- [] 处理一下bag的bug,看一下是否为地图切换的bug
 - [] 
