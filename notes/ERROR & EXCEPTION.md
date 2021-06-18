@@ -1,0 +1,1 @@
+- X在构造函数中shared_from_this()传递本类的指针.
