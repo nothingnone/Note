@@ -129,4 +129,5 @@ change:
 - 阅读kplanner代码,尝试修改.
 - 编译与定位的接口.
 - 不要再构造函数里shared_from_this()传递本类的指针。
+- ICRA会议,必须要研究一下.
 
