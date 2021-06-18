@@ -136,4 +136,5 @@ change:
 
 - 查bug.
 elev out door res:2 ,open/close: 160/74
-newg
+newgoalAvailable 新旧目标点相同
+receive stop signal
