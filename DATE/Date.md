@@ -141,3 +141,4 @@ newgoalAvailable 新旧目标点相同
 receive stop signal
 
 - teb 性能优化
+目前有四个方向
