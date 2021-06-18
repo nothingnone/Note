@@ -139,3 +139,5 @@ change:
 elev out door res:2 ,open/close: 160/74
 newgoalAvailable 新旧目标点相同
 receive stop signal
+
+- teb 性能优化
