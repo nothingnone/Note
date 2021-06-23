@@ -165,3 +165,4 @@ receive stop signal
 - 电梯内定位微调优化.
 - 并进行perf分析.
 - /etc/udev/70 取消eth的注释。
+- /etc/network/interfaces
