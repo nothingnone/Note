@@ -163,6 +163,6 @@ receive stop signal
 - 配置T1机器人激光雷达.下载最新的sdkeli雷达驱动,并且通过rqt_reconfige结合rviz设置屏蔽角度. done!
 - 自测阻塞检测功能.临时方案 done!
 - 电梯内定位微调优化. Undo!
-- 进行perf分析.运行半分钟,并记录movebase的cpu占用.perf并记录数据进行分析.
+- 进行perf分析.运行半分钟,并记录movebase的cpu占用.perf并记录数据进行分析.cpu%150~160.
 - /etc/udev/70 取消eth的注释。
 - /etc/network/interfaces
