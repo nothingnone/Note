@@ -109,4 +109,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpic")
 
 #add link options
 add_link_options(-pg)	# gprof, to generate gmon.out
+
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -std=c++11 ")
+# this means add -std=c++11 to CMAKE_CXX_FLAGS_RELEASE.
+
 ```
