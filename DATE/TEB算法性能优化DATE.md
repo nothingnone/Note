@@ -19,7 +19,10 @@ move_base cpu占用150%~160%
 - 2% teb_local_planner::EdgeAcceleration::computeError
 
 - 总结
-costmap的memset有问题.预计取消local的膨胀层,能够减少10%.global的costmap的更新频率有问题,如果是20Hz问题就很大.
+costmap的memset有问题.预计取消local的膨胀层,能够减少10%.global的costmap的更新频率有问题,如果是20Hz问题就很大.costmap的整体占用都有问题.
+teb的占用更大,因为teb的频率与实际有差.g2o的计算量难以下降.
+teb的速度计算有问题,占用过大.
+- teb buildgraph只占用了2.62%
 
 ### 明确规划频率，控制频率
 kplanner 全局10 
