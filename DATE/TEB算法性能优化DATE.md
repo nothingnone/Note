@@ -15,10 +15,13 @@ move_base cpu占用150%~160%
 7% KPlannerROS::makePlan(PoseStamped::vector)
 	- 3% KPlanner::calcKPlannerDijkstra
 
-22% g2o
+22% g2o(teb性能并不达标0.12s)
 - 2% teb_local_planner::EdgeAcceleration::computeError
 
-- 明确规划频率，控制频率
+
+### 明确规划频率，控制频率
 kplanner 全局10 
 teb 全局 局部
 
+### perf对锁进行分析
+学习,探究
