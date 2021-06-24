@@ -32,5 +32,21 @@ teb 全局 局部
 
 ### perf对锁进行分析
 - 学习
+缺省情况下，除了 task-clock-msecs 之外，perf stat 还给出了其他几个最常用的统计信息：
+Task-clock-msecs：CPU 利用率，该值高，说明程序的多数时间花费在 CPU 计算上而非 IO。
+Context-switches：进程切换次数，记录了程序运行过程中发生了多少次进程切换，频繁的进程切换是应该避免的。
 
+Cache-misses：程序运行过程中总体的 cache 利用情况，如果该值过高，说明程序的 cache 利用不好
+
+CPU-migrations：表示进程 t1 运行过程中发生了多少次 CPU 迁移，即被调度器从一个 CPU 转移到另外一个 CPU 上运行。
+
+Cycles：处理器时钟，一条机器指令可能需要多个 cycles，
+
+Instructions: 机器指令数目。
+
+IPC：是 Instructions/Cycles 的比值，该值越大越好，说明程序充分利用了处理器的特性。
+
+Cache-references: cache 命中的次数
+
+Cache-misses: cache 失效的次数。
 
