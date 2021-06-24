@@ -45,6 +45,6 @@ Instructions: 机器指令数目。
 IPC：是 Instructions/Cycles 的比值，该值越大越好，说明程序充分利用了处理器的特性。
 Cache-references: cache 命中的次数
 Cache-misses: cache 失效的次数。
-
+- trace
 
 
