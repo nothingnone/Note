@@ -16,6 +16,6 @@ move_base cpu占用150%~160%
 	- 3% [KPlanner::calcKPlannerDijkstra
 
 22% g2o
-- 
+- 2% teb_local_planner::EdgeAcceleration::computeError
 
 
