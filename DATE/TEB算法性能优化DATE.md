@@ -18,10 +18,13 @@ move_base cpu占用150%~160%
 22% g2o(teb性能并不达标0.12s)
 - 2% teb_local_planner::EdgeAcceleration::computeError
 
+- 总结
+costmap的memset有问题.预计取消local的膨胀层,能够减少10%.
 
 ### 明确规划频率，控制频率
 kplanner 全局10 
 teb 全局 局部
 
 ### perf对锁进行分析
-学习,探究
+学习
+
