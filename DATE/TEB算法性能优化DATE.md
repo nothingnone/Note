@@ -8,3 +8,4 @@ move_base cpu占用150%~160%
 		- 12% CellData::lessId::pair 
 - 13% memset
 
+12% exe
