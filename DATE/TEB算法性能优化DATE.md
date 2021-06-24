@@ -1,5 +1,5 @@
 - 6-24
-初始设置
+### 
 move_base cpu占用150%~160%
 
 42% Costmap::updateMap
@@ -18,6 +18,6 @@ move_base cpu占用150%~160%
 22% g2o
 - 2% teb_local_planner::EdgeAcceleration::computeError
 
-规划频率
+- 明确规划频率，控制频率
 kplanner 全局10 
 teb 全局 局部
