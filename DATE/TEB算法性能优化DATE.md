@@ -18,4 +18,5 @@ move_base cpu占用150%~160%
 22% g2o
 - 2% teb_local_planner::EdgeAcceleration::computeError
 
+规划频率
 
