@@ -15,6 +15,7 @@ move_base cpu占用150%~160%
 7% KPlannerROS::makePlan(PoseStamped::vector)
 	- 3% [KPlanner::calcKPlannerDijkstra
 
-
+22% g2o
+- 
 
 
