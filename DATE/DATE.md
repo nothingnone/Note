@@ -167,4 +167,5 @@ receive stop signal
 - /etc/udev/70 取消eth的注释。
 - /etc/network/interfaces
 
-
+- 6-24
+- 
