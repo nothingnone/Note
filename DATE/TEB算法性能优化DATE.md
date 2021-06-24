@@ -28,6 +28,7 @@ teb的buildgraph只占用了2.62%
 ### 明确规划频率，控制频率
 kplanner 全局10 
 teb 全局 局部
+- 总结
 
 ### perf对锁进行分析
 学习
