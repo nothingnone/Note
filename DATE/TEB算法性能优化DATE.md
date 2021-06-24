@@ -47,5 +47,5 @@ Cache-references: cache 命中的次数
 Cache-misses: cache 失效的次数。
 - trace
 - slab 分配器
-- 编译-g
+- 编译-g，减少影响调试的优化。倘若对性能影响很大，说明编译器的优化幅度较大，亦从侧面表明有bad code。
 
