@@ -166,3 +166,5 @@ receive stop signal
 - 进行perf分析.运行半分钟,并记录movebase的cpu占用.perf并记录数据进行分析.cpu%150~160.
 - /etc/udev/70 取消eth的注释。
 - /etc/network/interfaces
+
+
