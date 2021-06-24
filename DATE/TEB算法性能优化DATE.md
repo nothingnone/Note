@@ -19,4 +19,5 @@ move_base cpu占用150%~160%
 - 2% teb_local_planner::EdgeAcceleration::computeError
 
 规划频率
-
+kplanner 全局
+teb 全局 局部
