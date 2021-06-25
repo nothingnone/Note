@@ -55,6 +55,6 @@ valgrind 似乎对性能影响太大，不建议使用.DRD与Helgrind工具.
 ^ mutrace 首先在测试程序中验证.注意测试其是否必须程序自动退出.
 ^ print 如何打印并收集信息.并编写脚本进行数据处理.
 
-- 对checkTrajectoryHealthy的average进行
+- 对checkTrajectoryHealthy的average进行优化后，由150降到142. Done!
 
 
