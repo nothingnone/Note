@@ -61,7 +61,7 @@ valgrind 似乎对性能影响太大，不建议使用.DRD与Helgrind工具.
 - 降低全局costmap由20Hz降低到10Hz，占用高负载110%，峰值160%.不影响运动表现，但会导致kplanner报错，not init。
 - Todo
 - kplanner频率能否进一步下降
-- 
+- 确定全局，局部规划频率
 
 
 
