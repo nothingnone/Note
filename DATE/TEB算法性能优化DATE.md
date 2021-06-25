@@ -58,6 +58,6 @@ valgrind 似乎对性能影响太大，不建议使用.DRD与Helgrind工具.
 ### 6-25 优化与测试
 - 原始数据 高负载时占用150%，长路线规划初始段，以及峰值可达190%
 - 对checkTrajectoryHealthy的average进行优化后，由150降到142. Done!
-- 降低全局costmap由20Hz降低到10Hz，占用高负载110%，峰值160%.不影响
+- 降低全局costmap由20Hz降低到10Hz，占用高负载110%，峰值160%.不影响运动表现，但会导致kplanner报错，not init。
 
 
