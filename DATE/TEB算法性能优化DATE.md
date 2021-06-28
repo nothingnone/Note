@@ -65,4 +65,5 @@ valgrind 似乎对性能影响太大，不建议使用.DRD与Helgrind工具.
 - global_costmap: update 20, publish 10
 - local_costmap : update 20, publish 5
 - local planner : plan 20, control 20
+- global planner: plan 10
 
