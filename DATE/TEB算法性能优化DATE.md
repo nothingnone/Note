@@ -70,4 +70,6 @@ valgrind 似乎对性能影响太大，不建议使用.DRD与Helgrind工具.
 ### 6-28 总结
 - 降kplanner为5Hz;降global costmap update为5Hz, publish为5Hz;
 - 目前cpu占用由140~150%到80~90%.
-- 方向:将teb的规划和控制拆分为两部分,降低规划频率.
+- 方向:将teb的规划和控制拆分为两部分,降低规划频率,保持控制频率.预计降低20%.
+- 目前作为降CPU占用阶段版本1.teb的优化作为后续版本.
+- 
