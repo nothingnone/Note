@@ -67,3 +67,5 @@ valgrind 似乎对性能影响太大，不建议使用.DRD与Helgrind工具.
 - local planner : plan 20, control 20
 - global planner: plan 10
 
+### 6-28 总结
+- 降kplanner为5Hz,降global 
