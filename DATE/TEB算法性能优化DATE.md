@@ -68,4 +68,5 @@ valgrind 似乎对性能影响太大，不建议使用.DRD与Helgrind工具.
 - global planner: plan 10
 
 ### 6-28 总结
-- 降kplanner为5Hz,降global 
+- 降kplanner为5Hz;降global costmap update为5Hz, publish为5Hz;
+- 目前cpu占用由140~150%到80~90%.
