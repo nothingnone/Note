@@ -13,6 +13,7 @@ move_base cpu占用150%~160%
 
 12% executeCB
 - 11% teb_local_plannerROS::computeVelocityCommands:2%
+	- 3% process
 	- 6% TebOptimalPlanner::checkTrajectoryHealthy
 
 7% KPlannerROS::makePlan(PoseStamped::vector)
