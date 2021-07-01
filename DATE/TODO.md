@@ -4,4 +4,4 @@
 	- 目前不上桩的数量约为20台.
 - [ ] kplanner解决频繁转圈问题.
 
-- [ ] 解先发result,后发feedback的bug.
+- [ ] 解先发result,后发feedback的bug.查看问题原因.
