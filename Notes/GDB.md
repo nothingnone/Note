@@ -8,4 +8,9 @@ objdump -h .o
 dir /path/to/source/dir
 set subtitleddir /origin/path /replaced path
 # replace /path/in/symbol with /path/on/debug/pc
+
+# coredump
 ```
+```
+```
+
