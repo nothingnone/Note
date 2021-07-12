@@ -9,8 +9,8 @@ dir /path/to/source/dir
 set subtitleddir /origin/path /replaced path
 # replace /path/in/symbol with /path/on/debug/pc
 
-# coredump
-```
-```
+# coredump file. export to same directory of execfile
+ulimit -c unlimited # unlimited coredump file size
+
 ```
 
