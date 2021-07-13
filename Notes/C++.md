@@ -21,5 +21,8 @@ void memcpyPreemptible(void * dest, void * src, size_t n) {
 // same as memset().
 
 // constrution class
-classA c = Cla
+classA c = classA(param)
+classA c;
+classA c(param);
+boost::shared_ptr<classA> c = boost::make_shared<classA>(param);
 ```
