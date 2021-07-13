@@ -20,9 +20,9 @@ void memcpyPreemptible(void * dest, void * src, size_t n) {
 }
 // same as memset().
 
-// constrution class
-classA c = classA(param)
-classA c;
+// constrution class. Danger.
+classA c = classA(param); // param constrution.
+classA c;  // no param constrution. 
 classA c(param);
 boost::shared_ptr<classA> c = boost::make_shared<classA>(param);
 ```
