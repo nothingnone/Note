@@ -21,7 +21,7 @@ void memcpyPreemptible(void * dest, void * src, size_t n) {
 // same as memset().
 
 // constrution class. Danger.
-classA c = classA(param); // param constrution. im
+classA c = classA(param); // param constrution. explicit invoke.
 classA c;  // no param constrution. ambiguity! 
 /*
 class A{
@@ -31,6 +31,7 @@ public:
   A(int i =1);
 }
 */
-classA c(param);
+classA c(param);  // implicitly incoke.
+classA *c = new 
 boost::shared_ptr<classA> c = boost::make_shared<classA>(param);
 ```
