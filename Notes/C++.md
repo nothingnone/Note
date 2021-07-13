@@ -19,4 +19,7 @@ void memcpyPreemptible(void * dest, void * src, size_t n) {
   }
 }
 // same as memset().
+
+// constrution class
+classA c = Cla
 ```
