@@ -39,3 +39,28 @@ boost::shared_ptr<classA> c = boost::make_shared<classA>(param);
 // special
 boost::shared_ptr<int[]> c = boost::make_shared<int[]>(size);
 ```
+```c++
+// exhaustive search sequence!
+// Use recurse
+typedef std::vector<std::vector<uint8_t>> vv_uint8;
+typedef std::vector<std::vector<uint8_t>>::iterator vv_uint8_iter;
+typedef std::vector<uint8_t> v_uint8;
+typedef std::vector<uint8_t>::iterator v_uint8_iter;
+vv_uint8 exhaustSeq(v_uint8 elems){
+    if(elems.size()==1){
+        return vv_uint8{elems};
+    }
+    vv_uint8 res;
+    for(v_uint8_iter iter = elems.begin(); iter<elems.end(); ++iter){
+        uint8_t elem = *iter;
+        auto tmp = elems;
+        tmp.erase(tmp.begin()+(iter-elems.begin()));
+        vv_uint8 tmp_res = exhaustSeq(tmp);
+        for(v_uint8 seq : tmp_res){
+            seq.insert(seq.begin(),elem);
+            res.push_back(seq);
+        }
+    }
+    return res;
+}
+```
