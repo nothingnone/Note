@@ -7,5 +7,5 @@ use_cudnn_on_gpu, data_format, dilations, name, filters)
 # strides: [1, x, y, 1]. x, y for conv kernel multi step.
 # padding: "SAME"/"VALID"
 # use_cudnn_on_gpu: default--true
-# dilations: An int list with length 1/2/4. k>1,skip k-1 
+# dilations: An int list with length 1(all)/2(height,width)/4(1,x,y,1, as data_format order). k>1,skip k-1 cells between each filter element on that dimension.
 ```
