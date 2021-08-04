@@ -8,4 +8,8 @@ use_cudnn_on_gpu, data_format, dilations, name, filters)
 # padding: "SAME"/"VALID"
 # use_cudnn_on_gpu: default--true
 # dilations: An int list with length 1(all)/2(height,width)/4(1,x,y,1, as data_format order). k>1,skip k-1 cells between each filter element on that dimension.
+# filters: alias filter.
+# output:
+output[b, i, j, out_c] = 
+ sum_{di, dj, q} input[b, strides.h*i+di, strides.w, ]
 ```
