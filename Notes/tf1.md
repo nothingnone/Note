@@ -5,5 +5,5 @@ use_cudnn_on, data_format, dilations, name, filters)
 # input: 4-D tensor as data_format.
 # filter: 4-D kernel. [filter_height, f_w, in_channels, out_c] 
 # strides: [1, x, y, 1]. x, y for conv kernel multi step.
-# 
+# padding: "SAME"/"VALID"
 ```
