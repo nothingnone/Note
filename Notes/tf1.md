@@ -16,6 +16,9 @@ input[b, (strides.h*i+di)*dilation.h, (strides.w*j+dj)*dilation.w, in_c]
 *filter[di, dj, in_c, out_c]
 ```
 ```python
-tf.nn.max_pool(value, ksize, 
-)
+tf.nn.max_pool(value, ksize, strides, 
+padding, data_format, name, input)
+value: input
+ksize: size of windows
+strides: strides of sliding
 ```
