@@ -20,5 +20,9 @@ tf.nn.max_pool(value, ksize, strides,
 padding, data_format, name, input)
 value: input
 ksize: size of windows
-strides: strides of sliding
+strides: strides of sliding windows.
+padding: "SAME"/"VALID"
+data_format: as usual.
+name: as usual.
+input: alias for value.
 ```
