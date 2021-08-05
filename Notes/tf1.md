@@ -12,6 +12,6 @@ use_cudnn_on_gpu, data_format, dilations, name, filters)
 # output:
 output[b, i, j, out_c] = 
 sum_{di, dj, in_c} 
-input[b, (strides.h*i+di)*padding.h, (strides.w*j+dj)*padding.w, in_c]
+input[b, (strides.h*i+di)*dilation.h, (strides.w*j+dj)*dilation.w, in_c]
 *filter[di, dj, in_c, out_c]
 ```
