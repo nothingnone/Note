@@ -1,3 +1,8 @@
-### tensorflow learn
-- [ ] skimming to get main ideas and whole process.
-- [ ] scanning for details and give sweat on whick matters.
+- [ ] 协作跟踪T5不上桩问题.
+	- 支持拿到现场的编号,然后要求生产提供同一批次的样品用于分析.
+	- 目前拿到了同一批次的充电桩，以及一个较新的蓝海雷达。经测试没有找出原因.
+	- 目前不上桩的数量约为20台.
+- [ ] kplanner解决频繁转圈问题.
+
+- [ ] 解先发result,后发feedback的bug.查看问题原因.
+- [ ] 拉定位会议.
