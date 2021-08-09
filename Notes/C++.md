@@ -69,5 +69,7 @@ vv_uint8 exhaustSeq(v_uint8 elems){
 # vector func
 std::vector::size 	# num of elements.
 std::vector::capacity 	# size of memory applied.
-std::vector::clear()	# delete all elem, set size 0, but remain
+std::vector::clear()	# delete all elem, set size 0, but retain capacity. delte object and call destruction, won't free pointer point to.
+std::vector::reserve()  # set capacity.
+
 ```
