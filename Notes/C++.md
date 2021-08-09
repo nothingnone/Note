@@ -64,3 +64,10 @@ vv_uint8 exhaustSeq(v_uint8 elems){
     return res;
 }
 ```
+
+```cpp
+# vector func
+std::vector::size 	# num of elements.
+std::vector::capacity 	# size of memory applied.
+std::vector::clear()	# delete all elem, set size 0, but remain
+```
