@@ -3,5 +3,6 @@
 - new agents and loop
 	- ***move***
 	- ***info***
-- agent decide its move with info like "trajectory moment"
+- agent decide its move with randomly with info like "trajectory momentum", "heuristic info to goal", "info shared with agents".
+- once agent got reward, give more pre
 ### 
