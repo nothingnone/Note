@@ -21,3 +21,4 @@ into gene pool.
 - population brings collective intelligence. And distruibutable computation.
 - population brings robust random.
 - GA can search for a "good" solution very fast.
+- default to fit dynamic environment?? because population deversity decrease to converge.
