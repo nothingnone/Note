@@ -10,3 +10,7 @@
 - use "math model" mind to judge if a problem can be transfromed into "graph problem".
 
 ### Characteristic
+- high risk of stop converge!
+- low search efficient!
+- high efficiency to  high precise!
+- 
