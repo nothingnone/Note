@@ -12,5 +12,5 @@
 ### Characteristic
 - high risk of stop converge!
 - low search efficient!
-- high efficiency to  high precise!
-- 
+- high efficiency to find better solve in a high dimension and complex slove space!
+- good for TSP.
