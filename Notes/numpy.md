@@ -24,4 +24,6 @@ Datatype: n dimension array
 ### np.array()
 - np.array()
 
-### 
+### function
+- np.stack([array list], axis=dimension_id)
+	- stack array in dimension_id axis. dimension id dtart 

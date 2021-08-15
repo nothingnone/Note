@@ -10,7 +10,7 @@ tf.Session(target, graph, config)
 session.run(fetches, feed_dict, options, run_metadata)
 # fetches: list of graph elements to fetch.
 # feed_dict: feed variables of placeholder inputs.
-# finish compute should invoke session.close() to free resources. Or use with to open session context.
+# finish compute should invoke session.close() to free resources. Or use "with" to open session context.
 ```
 
 ```python
