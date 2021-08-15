@@ -1,6 +1,11 @@
 ### Session
+```python
 tf.Session(target, graph, config)
+# tf use "compute graph" to define tensor compute.
+# while compute graph tensor flow defined, execute on devices with session.
+# target: tensor flow to compute on target co. 
 
+```
 
 ```python
 tf.nn.conv2d(input, filter, strides, paddings, \
