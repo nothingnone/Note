@@ -3,8 +3,11 @@
 tf.Session(target, graph, config)
 # tf use "compute graph" to define tensor compute.
 # while compute graph tensor flow defined, execute on devices with session.
-# target: tensor flow to compute on target co. 
-
+# target: tensor flow to compute on target compute engine. eg: cpu0, gpu0, distribute devices.
+# graph: compute graph.
+# config: config. eg: log, cpu compute config.
+session.run()
+# 
 ```
 
 ```python
