@@ -12,6 +12,11 @@ session.run(fetches, feed_dict, options, run_metadata)
 # feed_dict: feed variables of placeholder inputs.
 # finish compute should invoke session.close() to free resources. Or use "with" to open session context.
 ```
+```python
+tf.tensor.eval(feed_dict, session)
+# 
+```
+
 
 ```python
 tf.nn.conv2d(input, filter, strides, paddings, \
