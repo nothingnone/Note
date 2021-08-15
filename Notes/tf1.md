@@ -1,4 +1,5 @@
 ### Session
+tf.Session(target, graph, config)
 
 
 ```python
