@@ -24,9 +24,13 @@ Datatype: n dimension array
 ### np.array()
 - np.array()
 
-### function
+### functions
 - np.stack([array list], axis=dimension_id)
 	- stack arrays in dimension_id axis. dimension id start from 0.
 	- stacked arrays dimension. 0 1 2 -> x 0 1 2 / 0 x 1 2. 
 	- for 2D matrix, considering its logic. take 0 x 1 for example, 0 : : means a marix of n-st row of matrx. 0 x : means cloumn n-st row and n-st elemens.
-	- usually, dimension_id = 0/n+1. =0 means a list all elements. =n+1 means a position of elemens now is a list of 
+	- usually, dimension_id = 0/n+1. =0 means a list of all elements. =n+1 means at any position of elemens now is a list of "cells" at that position of all elements.
+
+### tips
+
+
