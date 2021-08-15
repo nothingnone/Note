@@ -2,14 +2,15 @@
 ```python
 tf.Session(target, graph, config)
 # tf use "compute graph" to define tensor compute.
-# while compute graph tensor flow defined, execute on devices with session.
+# while compute graph tensor flow defined, execute on target devices with session.
 # target: tensor flow to compute on target compute engine. eg: cpu0, gpu0, distribute devices.
 # graph: compute graph.
 # config: config. eg: log, cpu compute config.
 # session function: reset(), run(), partial_run()...
 session.run(fetches, feed_dict, options, run_metadata)
 # fetches: list of graph elements to fetch.
-# feed_dict: feed variables of pla
+# feed_dict: feed variables of placeholder inputs.
+# finish compute should invoke session.close() to free resources. Or use with to open session context.
 ```
 
 ```python
