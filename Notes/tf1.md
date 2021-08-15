@@ -6,8 +6,10 @@ tf.Session(target, graph, config)
 # target: tensor flow to compute on target compute engine. eg: cpu0, gpu0, distribute devices.
 # graph: compute graph.
 # config: config. eg: log, cpu compute config.
-session.run()
-# 
+# session function: reset(), run(), partial_run()...
+session.run(fetches, feed_dict, options, run_metadata)
+# fetches: list of graph elements to fetch.
+# feed_dict: feed variables of pla
 ```
 
 ```python
