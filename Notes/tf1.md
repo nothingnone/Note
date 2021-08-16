@@ -15,7 +15,11 @@ session.run(fetches, feed_dict, options, run_metadata)
 ```python
 tf.tensor.eval(feed_dict, session)
 # evaluate value of tensor with feed_dict in session.
-# if session is none, use default session. tf.interactiveSession 
+# if session is none, use default session. tf.InteractiveSession() return default session.
+# use sess.as_default() to set sess default *in this thread*. 
+```
+```python
+tf.train.optmi
 ```
 
 
