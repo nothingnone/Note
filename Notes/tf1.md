@@ -22,11 +22,12 @@ tf.tensor.eval(feed_dict, session)
 tf.train.optimizer(config)
 eg:
 trainer = tf.train.AdamOptimizer(learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-8)
-tariner.minimize(loss, global_step, grad_loss config...)
+tariner.minimize(loss, global_step, grad_loss, config...)
 # global_step, variable of gradient decent steps num.
+# grad_loss, tensor holds the gradient of loss.
+trainer.run(feed_dict={train_data})
+# use train_data to step down.
 ```
-
-
 ```python
 tf.nn.conv2d(input, filter, strides, paddings, \
 use_cudnn_on_gpu, data_format, dilations, name, filters)
