@@ -19,7 +19,10 @@ tf.tensor.eval(feed_dict, session)
 # use sess.as_default() to set sess default *in this thread*. 
 ```
 ```python
-tf.train.optmi
+tf.train.optimizer(config)
+eg:
+trainer = tf.train.AdamOptimizer(learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-8)
+tariner.minimize(loss, )
 ```
 
 
