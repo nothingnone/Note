@@ -14,7 +14,8 @@ session.run(fetches, feed_dict, options, run_metadata)
 ```
 ```python
 tf.tensor.eval(feed_dict, session)
-# 
+# evaluate value of tensor with feed_dict in session.
+# if session is none, use default session. tf.interactiveSession 
 ```
 
 
