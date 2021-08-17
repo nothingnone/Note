@@ -1,3 +1,33 @@
+### Session
+```python
+tf.Session(target, graph, config)
+# tf use "compute graph" to define tensor compute.
+# while compute graph tensor flow defined, execute on target devices with session.
+# target: tensor flow to compute on target compute engine. eg: cpu0, gpu0, distribute devices.
+# graph: compute graph.
+# config: config. eg: log, cpu compute config.
+# session function: reset(), run(), partial_run()...
+session.run(fetches, feed_dict, options, run_metadata)
+# fetches: list of graph elements to fetch.
+# feed_dict: feed variables of placeholder inputs.
+# finish compute should invoke session.close() to free resources. Or use "with" to open session context.
+```
+```python
+tf.tensor.eval(feed_dict, session)
+# evaluate value of tensor with feed_dict in session.
+# if session is none, use default session. tf.InteractiveSession() return default session.
+# use sess.as_default() to set sess default *in this thread*. 
+```
+```python
+tf.train.optimizer(config)
+eg:
+trainer = tf.train.AdamOptimizer(learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-8)
+tariner.minimize(loss, global_step, grad_loss, config...)
+# global_step, variable of gradient decent steps num.
+# grad_loss, tensor holds the gradient of loss.
+trainer.run(feed_dict={train_data})
+# use train_data to step down.
+```
 ```python
 tf.nn.conv2d(input, filter, strides, paddings, \
 use_cudnn_on_gpu, data_format, dilations, name, filters)
@@ -15,6 +45,7 @@ sum_{di, dj, in_c}
 input[b, (strides.h*i+di)*dilation.h, (strides.w*j+dj)*dilation.w, in_c]
 *filter[di, dj, in_c, out_c]
 ```
+
 ```python
 
 ```
