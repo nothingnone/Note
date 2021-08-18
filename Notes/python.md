@@ -11,7 +11,8 @@ class Child(parents):
 
 class child(parent1, parent2):
 	super.func()
-# 
+# multi inherit, and diamond inherit
+# from sub to parent, wide
 ```
 
 ### Decorator
