@@ -35,21 +35,20 @@ def decorator(param):
 		@wraps(func)
 		def wraps_func():
 			return
-		return wraps_
+		return wraps_func
 	return func_handle
 
 # use decorator class
 class decorator(object):
 	def __init__(self, param):
 		super(decorator, self).__init__(param)
-	def __call__(self, func, param):
+	def __call__(self, func):
 		@wraps(func)	
 		def wraps_func():
 			return
 		return wraps_func
-@decorator(param)
+@decorator(init)
+# use init to init decorator, and return a decoratoe object, which can be call.
 def origin_func():
 	return
-# attention! use class as decorator, will invoke __call__() function.
-# if you wanna init class, use this.
 ```
