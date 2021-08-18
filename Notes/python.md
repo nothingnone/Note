@@ -7,5 +7,11 @@
 ```python
 # origin
 def decorator(func, param):
-	def 
+	def wraps_func():
+		return
+	return wraps_func
+decorated_func = decorator(origin_func)
+decorated_func.__
+origin_func()
+# use @ and 
 ```
