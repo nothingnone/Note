@@ -32,5 +32,11 @@ origin_func.__name__ 	#origin_func
 class decorator(object):
 	def __init__(self, param):
 		super(decorator, self).__init__(param)
-	
+	def __call__(self, func):
+		@wraps(func)	
+		def wraps_func():
+			return
+		return wraps_func
+
+@
 ```
