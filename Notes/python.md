@@ -3,6 +3,11 @@
 - assign and copy problem.
 - multi inherit problem
 
+### Super
+```python
+class child()
+```
+
 ### Decorator
 ```python
 # origin
@@ -48,7 +53,7 @@ class decorator(object):
 			return
 		return wraps_func
 @decorator(init)
-# use init to init decorator, and return a decoratoe object, which can be call.
+# use init to init decorator, and return a decorator object, which can be call.
 def origin_func():
 	return
 ```
