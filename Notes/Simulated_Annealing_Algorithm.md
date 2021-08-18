@@ -14,8 +14,9 @@
 - population can make random more robust and efficient.
 
 ### Character
-- global solve
+- global solve.
 - good parameters can bring high efficiency and high performance and high precision.
-- random can be combined with 
+- random can be combined with heuristic info.
+- population reinforce random, but **no communication among individuals**. a 
 
 	
