@@ -17,6 +17,6 @@
 - global solve.
 - good parameters can bring high efficiency and high performance and high precision.
 - random can be combined with heuristic info.
-- population reinforce random, but **no communication among individuals**. a 
+- population reinforce random, but **no communication among individuals**. basic difer between GA, Ants Sys...
 
 	
