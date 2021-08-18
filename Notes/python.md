@@ -3,7 +3,7 @@
 - assign and copy problem.
 - multi inherit problem
 
-### decorator
+### Decorator
 ```python
 # origin
 def decorator(func, param):
@@ -40,4 +40,6 @@ class decorator(object):
 @decorator(param)
 def origin_func():
 	return
+# attention! use class as decorator, will invoke __call__() function.
+# if you wanna init class, use this.
 ```
