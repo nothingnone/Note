@@ -30,5 +30,7 @@ origin_func.__name__ 	#origin_func
 
 # use decorator class
 class decorator(object):
-	def __init__(self, params)
+	def __init__(self, param):
+		super(decorator, self).__init__(param)
+	
 ```
