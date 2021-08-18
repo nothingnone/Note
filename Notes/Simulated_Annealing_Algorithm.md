@@ -4,6 +4,12 @@
 - parallel
 - population reinforce random
 - adaptive
+- loop
+	- adaptive determine heat
+	- random search
 
-### Loop
-init variable
+### trick
+- adaptive heat
+- heat, determine search range and accept
+
+	
