@@ -3,9 +3,15 @@
 - assign and copy problem.
 - multi inherit problem
 
-### Super
+### Super, Multi inherit
 ```python
-class child()
+class Child(parents):
+	super(Child, self) 	# py2, return refer to parent.
+	super() 		# py3, same as above.
+
+class child(parent1, parent2):
+	super.func()
+# 
 ```
 
 ### Decorator
