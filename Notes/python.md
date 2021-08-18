@@ -11,7 +11,16 @@ def decorator(func, param):
 		return
 	return wraps_func
 decorated_func = decorator(origin_func)
-decorated_func.__
+decorated_func.__name__ 	# wraps_func
 origin_func()
-# use @ and 
+
+# use @ and functools.wraps
+from functools import wraps
+def decorator(func, param):
+	@wraps(func)
+	def wraps_func():
+		return
+	return wraps_func
+
+@
 ```
