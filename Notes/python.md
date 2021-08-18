@@ -11,8 +11,8 @@ class Child(parents):
 
 class child(parent1, parent2):
 	super.func()
-# multi inherit, and diamond inherit
-# from sub to parent, wide
+# multi inherit, and diamond inherit. search method in principls as follows.
+# from sub to parent, wide-first, in turn, only once.
 ```
 
 ### Decorator
