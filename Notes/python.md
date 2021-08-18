@@ -26,7 +26,9 @@ def decorator(func, param):
 def origin_func():
 	return
 origin_func.__name__ 	#origin_func
-# now decorator don't change origin_func 
+# now decorator don't change origin_func attributes.
 
-
+# use decorator class
+class decorator(object):
+	def __init__(self, params)
 ```
