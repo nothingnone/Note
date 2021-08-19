@@ -6,7 +6,7 @@
 ```python
 # add module search path
 import sys
-sys.path.appen
+sys.path.append(r"relative/path or /absolute/path")
 ```
 
 ### Super, Multi inherit
