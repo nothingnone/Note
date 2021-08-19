@@ -1,4 +1,5 @@
 - Acc follow target select, test data callback
-	- [] read nullmax_pilot to figure out 
+	- [] read nullmax_pilot to make filter logic clear.
+		- case 1: obstacle in path id change, distance in y axis sharpe change 
 	- [] base on single data folder, code filter.
 	- [] code script to scan all directories and filter all bag, generate a index file. 
