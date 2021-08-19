@@ -4,7 +4,7 @@
 ### principle
 - PMU,tracepoint,kernel. Event Count. 
 - Task-clock-msecs: CPU utilization.
-- Context-switches: switches of process cont进程切换次数，记录了程序运行过程中发生了多少次进程切换，频繁的进程切换是应该避免的。
+- Context-switches: switches of process context.进程切换次数，记录了程序运行过程中发生了多少次进程切换，频繁的进程切换是应该避免的。
 Cache-misses：程序运行过程中总体的 cache 利用情况，如果该值过高，说明程序的 cache 利用不好
 CPU-migrations：表示进程 t1 运行过程中发生了多少次 CPU 迁移，即被调度器从一个 CPU 转移到另外一个 CPU 上运行。
 Cycles：处理器时钟，一条机器指令可能需要多个 cycles，
