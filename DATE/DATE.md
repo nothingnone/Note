@@ -1,2 +1,4 @@
 - Acc follow target select, test data callback
-	- [] base on single data 
+	- [] read nullmax_pilot to figure out 
+	- [] base on single data folder, code filter.
+	- [] code script to scan all directories and filter all bag, generate a index file. 
