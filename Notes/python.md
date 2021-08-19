@@ -3,6 +3,12 @@
 - assign and copy problem.
 - multi inherit problem
 
+```python
+# add module search path
+import sys
+sys.path.appen
+```
+
 ### Super, Multi inherit
 ```python
 class Child(parents):
