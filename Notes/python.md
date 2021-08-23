@@ -9,8 +9,8 @@ import sys
 sys.path.append(r"relative/path or /absolute/path")
 ```
 ```python
-dir(obj)	# return summary of 
-help()
+dir(obj)	# return summary of obj, attributes and methods.
+help(obj)	# return manual of object, which is written by author.
 ```
 
 ### Super, Multi inherit
