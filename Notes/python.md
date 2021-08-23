@@ -75,6 +75,6 @@ def origin_func(param):
 
 # In Conclusion.
 # In python, func is a object which is callable.
-# it can be function a
+# it can be function or param, according to operator parsing. () operator has a high priority. 
 # decorated_func(param) = param --> decorated_func = wraps_func(func) .__call__(param)
 ```
