@@ -68,8 +68,12 @@ class decorator(object):
 		def wraps_func(param):
 			return
 		return wraps_func
-@decorator(init)
+@decorator(param_1)
 # use init to init decorator, and return a decorator object, which can be call.
-def origin_func():
+def origin_func(param):
 	return
+
+# In Conclusion.
+# In python, func is a object which is callable.
+# decorated_func(param) = wrap
 ```
