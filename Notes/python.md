@@ -9,7 +9,8 @@ import sys
 sys.path.append(r"relative/path or /absolute/path")
 ```
 ```python
-
+dir(obj)	# return summary of 
+help()
 ```
 
 ### Super, Multi inherit
