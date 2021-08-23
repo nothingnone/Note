@@ -4,7 +4,7 @@
 		- case 2: lane recognization bad, driver override, 
 left/right front car very close or ttc(time distance) is small.
 	- [x] make needs clear.
-		- take dowm date, case, bag path, bag timestamp. 
+		- take dowm date, case, bag path, bag timestamp start end. 
 		- judge case according to data queue.
 		- first step base on screen UI, next step base on scripts.
 	- [ ] base on single data folder, code filter.
