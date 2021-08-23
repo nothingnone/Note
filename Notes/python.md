@@ -24,14 +24,14 @@ class child(parent1, parent2):
 ### Decorator
 ```python
 # origin
-def decorator(func, param):
-	def wraps_func():
+def decorator(func):
+	def wraps_func(param):
 		return
 	return wraps_func
 decorated_func = decorator(origin_func)
 decorated_func.__name__ 	# wraps_func
 func = decorator(func)		# decorated func
-
+func(param)
 
 # use @ and functools.wraps
 from functools import wraps
@@ -51,7 +51,7 @@ origin_func.__name__ 	#origin_func
 def decorator(param):
 	def func_handle(func):
 		@wraps(func)
-		def wraps_func():
+		def wraps_func(param):
 			return
 		return wraps_func
 	return func_handle
