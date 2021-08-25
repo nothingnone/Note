@@ -33,7 +33,9 @@ Datatype: n dimension array
 - np.append(ndarray, ndarray, axis)
 	- return splice of two array in axis.
 	- don't change axis, only change shape in patameter axis.
-	- require two array 
+	- require two array have same axes.
+- np.hstack(tuple)
+	- append in a
 - np.stack([array list], axis=dimension_id)
 	- stack arrays in dimension_id axis. dimension id start from 0.
 	- stacked arrays dimension. 0 1 2 -> x 0 1 2 / 0 x 1 2. 
