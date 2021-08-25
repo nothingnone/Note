@@ -25,6 +25,19 @@ Datatype: n dimension array
 - np.array()
 
 ### functions
+- np.linspace(start, end, num)
+	- generate a linear space series from start to end with num elements.
+- np.flip(ndarray, axis)
+	- flip(reverse) ndappay in axis.
+	- flipud reverse in axis 0.
+- np.append(ndarray, ndarray, axis)
+	- return splice of two array in axis.
+	- don't change axis, only change shape in patameter axis.
+	- require two array have same axes.
+- np.hstack(tuple)
+	- append in axis 1.
+- np.vstack(tuple)
+	- same as above, in axis 0.
 - np.stack([array list], axis=dimension_id)
 	- stack arrays in dimension_id axis. dimension id start from 0.
 	- stacked arrays dimension. 0 1 2 -> x 0 1 2 / 0 x 1 2. 
