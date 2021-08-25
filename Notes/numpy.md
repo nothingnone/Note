@@ -25,6 +25,7 @@ Datatype: n dimension array
 - np.array()
 
 ### functions
+- np.linspace(start, end, step)
 - np.stack([array list], axis=dimension_id)
 	- stack arrays in dimension_id axis. dimension id start from 0.
 	- stacked arrays dimension. 0 1 2 -> x 0 1 2 / 0 x 1 2. 
