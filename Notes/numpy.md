@@ -35,7 +35,9 @@ Datatype: n dimension array
 	- don't change axis, only change shape in patameter axis.
 	- require two array have same axes.
 - np.hstack(tuple)
-	- append in a
+	- append in axis 1.
+- np.vstack(tuple)
+	- same as above, in axis 0.
 - np.stack([array list], axis=dimension_id)
 	- stack arrays in dimension_id axis. dimension id start from 0.
 	- stacked arrays dimension. 0 1 2 -> x 0 1 2 / 0 x 1 2. 
