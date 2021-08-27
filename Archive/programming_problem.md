@@ -9,4 +9,4 @@ AX+B \geq 0
 $$
 
 - principle
-  
+Minumum must at cross point of constraints. Solve space of constraints 
