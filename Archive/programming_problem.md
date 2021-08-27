@@ -1,7 +1,9 @@
 ## Linear programming
 - problem
 $$
-minf(X),
-\begin{aligned}
-\end{aligned}
+\begin{gather}
+minf(X)=CX
+\\
+g(X)
+\end{gather}
 $$
