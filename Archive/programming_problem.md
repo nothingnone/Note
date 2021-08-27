@@ -1,6 +1,7 @@
 ## Linear programming
 - problem
 $$
-min \  f(x)
+min \  f(X) = CX
+
 
 $$
