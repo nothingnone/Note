@@ -1,5 +1,5 @@
 ## Linear programming
 - problem
 $$
-\space
+
 $$
