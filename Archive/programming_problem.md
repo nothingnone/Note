@@ -9,4 +9,5 @@ AX+B \geq 0
 $$
 
 - principle
-Minumum must at cross point of constraints. Solve space of constraints 
+Minumum must at cross point of constraints. Solve space of constraints is a convex polygon zone in high dimension, so start form a valid point and search along constraint and normal vector of C, we will find minimum finally.
+The key is how to implement search method in a high efficienvy 
