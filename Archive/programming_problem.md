@@ -1,9 +1,9 @@
 ## Linear programming
 - problem
 $$
-\begin{align}
+\begin{array}
 minf(X)=CX \\
 g(X)=AX=B \geq 0 \\
-
-\end{align}
+a
+\end{array}
 $$
