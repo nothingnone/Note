@@ -3,6 +3,7 @@
 $$
 \begin{aligned}
 minf(X)=CX \\
-g(X)=BX \geq 0
+g(X)=AX=B \geq 0 \\
+
 \end{aligned}
 $$
