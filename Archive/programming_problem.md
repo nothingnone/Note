@@ -1,9 +1,8 @@
 ## Linear programming
 - problem
 $$
-\begin{gather}
-minf(X)=CX
-\\
-g(X)
-\end{gather}
+\begin{aligned}
+minf(X)=CX \\
+g(X)=BX \geq
+\end{aligned}
 $$
