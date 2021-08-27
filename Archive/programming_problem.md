@@ -1,7 +1,7 @@
 ## Linear programming
 - problem
 $$
-\usepackage[le]{}
+\usepackage[leqno]{amsmath}
 \begin{gathered}
 minf(X)=CX \\
 g(X)=AX=B \geq 0 \\
