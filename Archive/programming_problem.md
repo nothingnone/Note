@@ -27,5 +27,6 @@ h_{i}(X) = 0
 \end{gathered}
 $$
 - visualize
-graph in
+Graph in slove zone of $h_{i}(X)$
 ![probelm-graph](../Imgs/nolinear-programming/contraint-programming-graph.png)
+According to graph, the solve must be at position where normal vetor of $f(X)$ and $g_{i}(X)$ in 
