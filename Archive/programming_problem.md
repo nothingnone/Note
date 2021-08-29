@@ -26,4 +26,5 @@ g_{i}(X) \ge 0
 h_{i}(X) = 0
 \end{gathered}
 $$
-![probelm-graph,](../Imgs/nolinear-programming/contraint-programming-graph.png,)
+<img src="../Imgs/nolinear-programming/contraint-programming-graph.png" alt="nolinear-programming-graph" style="zoom:80%;">
+![probelm-graph,scale=](../Imgs/nolinear-programming/contraint-programming-graph.png,)
