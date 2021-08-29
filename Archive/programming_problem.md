@@ -29,10 +29,16 @@ $$
 - visualize
 Graph in slove zone of $h_{i}(X)$
 ![probelm-graph](../Imgs/nolinear-programming/contraint-programming-graph.png)
-According to graph, the solve must be at position where normal vetor of $f(X)$ and $g_{i}(X)$ in opposite direction.
+According to graph, the solve must be at edge of $f(X)$ and $g_{i}(X)$ where normal vetor of $f(X)$ and $g_{i}(X)$ in opposite direction.
 
 - principle
 $$
-\begin{}
+\begin{cases}
+f'(X)-ag'(X)=0
+\\
 
+\end{cases}
 $$
+
+
+
