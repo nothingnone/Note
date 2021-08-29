@@ -13,3 +13,6 @@ Minumum must at cross point of constraints. Solve space of constraints is a conv
 The key is how to implement search method with a high efficiency algorithm.----simplex method.
 
 - algorithm
+Todo
+
+## Quadratic program
