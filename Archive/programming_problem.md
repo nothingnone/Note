@@ -21,7 +21,8 @@ $$
 \begin{gathered}
 min \ f(X) \  , (\text{convex function}) 
 \\
-g(X) \ge 0
-h(X)
+g_{i}(X) \ge 0
+\\
+h_{i}(X) = 0
 \end{gathered}
 $$
