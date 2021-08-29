@@ -15,11 +15,13 @@ The key is how to implement search method with a high efficiency algorithm.----s
 - algorithm
 Todo
 
-## Quadratic programming
+## Laga
 - problem
 $$
 \begin{gathered}
-min \ f(x) \  , (\text{convex f}) 
-
+min \ f(X) \  , (\text{convex function}) 
+\\
+g(X) \ge 0
+h(X)
 \end{gathered}
 $$
