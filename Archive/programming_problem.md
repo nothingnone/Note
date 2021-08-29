@@ -15,4 +15,11 @@ The key is how to implement search method with a high efficiency algorithm.----s
 - algorithm
 Todo
 
-## Quadratic program
+## Quadratic programming
+- problem
+$$
+\begin{gathered}
+min \ f(x) \  , (\text{convex f}) 
+
+\end{gathered}
+$$
