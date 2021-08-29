@@ -32,14 +32,21 @@ Graph in slove zone of $h_{i}(X)$
 According to graph, the solve must be at edge of $f(X)$ and $g_{i}(X)$ where normal vetor of $f(X)$ and $g_{i}(X)$ in opposite direction.
 
 - principle
-According to above, we can easily get constraints of solve, but how can we define which $i$ of $g_{i}(X)$ is the actice edge? We can give 
+According to above, we can easily get constraints of solve, but how can we define which $i$ of $g_{i}(X)$ is the actice edge? We can find that if it is not active, w don't need to constraint it, we can give it a weight 0.
 $$
 \begin{cases}
 f'(X)-ag'(X)=0
 \\
 ag(X)=0
+\\
+g_{i}(X) \ge 0
+\\
+h_{i}(X) = 0
+\\
+a \ge 0
 \end{cases}
 $$
+Now we can 
 
 
 
