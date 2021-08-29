@@ -15,7 +15,7 @@ The key is how to implement search method with a high efficiency algorithm.----s
 - algorithm
 Todo
 
-## Laga
+## Lagrangian multiplication method
 - problem
 $$
 \begin{gathered}
@@ -29,4 +29,10 @@ $$
 - visualize
 Graph in slove zone of $h_{i}(X)$
 ![probelm-graph](../Imgs/nolinear-programming/contraint-programming-graph.png)
-According to graph, the solve must be at position where normal vetor of $f(X)$ and $g_{i}(X)$ in 
+According to graph, the solve must be at position where normal vetor of $f(X)$ and $g_{i}(X)$ in opposite direction.
+
+- principle
+$$
+\begin{}
+
+$$
