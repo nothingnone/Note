@@ -48,6 +48,9 @@ a \ge 0
 \end{cases}$$
 
 - strong dual problem
-
+According to above, we can transform origin problem to following.
+$$\begin{gathered}
+min \  f(X)-ag(X)
+\end{gathered}$$
 
 
