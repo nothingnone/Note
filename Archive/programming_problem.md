@@ -47,6 +47,7 @@ h_{i}(X) = 0
 a \ge 0
 \end{cases}$$
 
+- strong dual problem
 
 
 
