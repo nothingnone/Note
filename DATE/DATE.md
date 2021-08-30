@@ -10,3 +10,7 @@ left/right front car very close or ttc(time distance) is small.
 	- [x] base on single data folder, code filter.
 	- [ ] code script to scan all directories and filter all bag, generate a index file.
 	- [ ] product iteration.
+
+- offline test
+	- [ ] read test node src.
+	- [ ] add detect obstacle offline test.
