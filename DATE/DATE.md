@@ -1,5 +1,5 @@
 - Acc follow target select, test data callback
-	- [ ] read nullmax_pilot to make filter logic clear.
+	- [x] read nullmax_pilot to make filter logic clear.
 		- case 1: obstacle in path id change, distance in y axis jump change for far to close. step change of pulse change.
 		- case 2: lane recognization bad, driver override, 
 left/right front car very close or ttc(time distance) is small.
@@ -11,6 +11,8 @@ left/right front car very close or ttc(time distance) is small.
 	- [ ] code script to scan all directories and filter all bag, generate a index file.
 	- [ ] product iteration.
 
-- offline test
-	- [ ] read test node src.
-	- [ ] add detect obstacle offline test.
+- planner offline test
+	- [ ] read topic
+	- [ ] read config
+	- [ ] write data into planning_context
+	- [ ] how to run?
