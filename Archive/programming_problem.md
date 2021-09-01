@@ -40,11 +40,11 @@ f'(X)-a_i \cdot h'(X)-b_i \cdot g'(X)=0
 \\
 b_i \cdot g(X)=0
 \\
+b_i \ge 0
+\\
 g_{i}(X) \ge 0
 \\
 h_{i}(X) = 0
-\\
-b_i \ge 0
 \end{cases}$$
 
 - strong dual problem
