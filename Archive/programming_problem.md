@@ -21,9 +21,9 @@ $$
 \begin{gathered}
 min \ f(X) \  , (\text{convex function}) 
 \\
-g_{i}(X) \ge 0
-\\
 h_{i}(X) = 0
+\\
+g_{i}(X) \ge 0
 \end{gathered}
 $$
 - visualize
@@ -36,15 +36,15 @@ According to above, we can easily get constraints of solve, but how can we defin
 Now, the optimizw solve must meet following constraints.
 We can solve them to get potential solution.
 $$\begin{cases}
-f'(X)-ag'(X)=0
+f'(X)-ah'(X)-bg'(X)=0
 \\
-ag(X)=0
+b g(X)=0
 \\
 g_{i}(X) \ge 0
 \\
 h_{i}(X) = 0
 \\
-a \ge 0
+b \ge 0
 \end{cases}$$
 
 - strong dual problem
