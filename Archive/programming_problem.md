@@ -36,9 +36,9 @@ According to above, we can easily get constraints of solve, but how can we defin
 Now, the optimizw solve must meet following constraints.
 We can solve them to get potential solution.
 $$\begin{cases}
-f'(X)-ah'(X)-bg'(X)=0
+f'(X)-a \cdot h'(X)-b \cdot g'(X)=0
 \\
-b g(X)=0
+b \cdot g(X)=0
 \\
 g_{i}(X) \ge 0
 \\
