@@ -16,3 +16,5 @@ left/right front car very close or ttc(time distance) is small.
 	- [ ] read config
 	- [ ] write data into planning_context
 	- [ ] how to run?
+- tips
+	- according to aebs, maybe planner_node no need to run start(). !!!
