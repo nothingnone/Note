@@ -75,4 +75,4 @@ classic strong dual problem. Have following equation.
 $$
 \min_{x}\max_{a,b} \mathcal{L}(X) = \max_{a,b}\min_{x} \mathcal{L}(X)
 $$
-This can reduce computation.
+This can reduce computation. It can be derived by using 
