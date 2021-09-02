@@ -98,7 +98,10 @@ min f(X) \implies min\ f(X)-\tau ln(g_i(X)) \\
 h_i(X) = 0 \\
 \text{now KKT condition is easier to solve without loose weights} \  a \\
 \begin{cases}
-\frac{\partial L}{\partial X} =f'(X)-\frac{\tau g'(X)}{h(X)}-b= 0
+\frac{\partial L}{\partial X} =f'(X)-\tau\cdot \frac{g'_i(X)}{g_i(X)}-b\cdot h'(X)= 0 \\
+\frac{\partial L}{\partial b} = h(X)=0 \\
+g_i(X) \ge 0
 \end{cases}
 \end{gathered}
 $$
+Now it's easier to solve problem, with Newtion Decent Method, 
