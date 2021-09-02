@@ -85,7 +85,7 @@ Exist $X$, makes all $g_i(X)>0$.
 Key idea is very simple, turn strict constraints into soft. 
 $$
 \begin{gathered}
-g(X) \ge 0 \ \\
-h(X)=0
+g(X) \ge 0 \implies -\tau \cdot ln(g(X)), \tau \to 0 \\
+h(X)=0 \implies 
 \end{gathered}
 $$
