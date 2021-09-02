@@ -66,9 +66,9 @@ h_{i}(X) = 0
 \end{cases}$$
 
 ## strong dual problem
-According to above, we can transform origin problem to following when $f(X)$ is convex, and $g''_i(X)$
+According to above, we can transform origin problem to following when $f(X)$ is convex, and $g''_i(X),h''_i(X)$ is 0.
 $$\begin{gathered}
 min \  f(X)-ag_i(X)-b_ih(X)
 \end{gathered}$$
-
+The above is convex, so the local minimum is global minimum. QP pro
 
