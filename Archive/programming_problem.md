@@ -70,5 +70,9 @@ According to above, we can transform origin problem to following when $f(X)$ is 
 $$\begin{gathered}
 min \  f(X)-ag_i(X)-b_ih(X)
 \end{gathered}$$
-The above is convex, so the local minimum is global minimum. QP pro
+The above is convex, so the local minimum is global minimum. QP(Quadratic Programming) problem, SVM are 
+classic strong dual problem. Have following equation.
+$$
+min_{} min
 
+$$
