@@ -86,6 +86,9 @@ Key idea is very simple, turn strict constraints into soft.
 $$
 \begin{gathered}
 g(X) \ge 0 \implies -\tau \cdot ln(g(X)), \tau \to 0 \\
-h(X)=0 \implies (h(X))^{\frac{2}{\tau}},\tau \to 0
+h(X)=0 \implies (|h(X)|)^{\frac{1}{\tau}} \  or \frac{1}{\tau},\tau \to 0
 \end{gathered}
 $$
+Besides, two punishment functions are convex.
+On the one hand, we can simply use decent method to find method.
+We can alse use 
