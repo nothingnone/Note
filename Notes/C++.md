@@ -63,3 +63,6 @@ private:
 };
 
 ```
+```cpp
+enum Stat
+```
