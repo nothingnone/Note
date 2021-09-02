@@ -94,14 +94,17 @@ On the one hand, we can simply use decent method to find method.
 We can alse use Analytic Method to find solve, if $f(X),g(X),h(X)$ is easily to analyze.
 $$
 \begin{gathered}
-min f(X) \implies min\ f(X)-\tau ln(g_i(X)) \\
+min f(X) \implies L(X)= min\ f(X)-\tau ln(g_i(X)) \\
 h_i(X) = 0 \\
 \text{now KKT condition is easier to solve without loose weights} \  a \\
 \begin{cases}
 \frac{\partial L}{\partial X} =f'(X)-\tau\cdot \frac{g'_i(X)}{g_i(X)}-b\cdot h'(X)= 0 \\
 \frac{\partial L}{\partial b} = h(X)=0 \\
-g_i(X) \ge 0
-\end{cases}
+g_i(X) \ge 0 \\
+\tau \to 0
+\end{cases} \\
+Conclusion: L(X_0) = f(X_)
 \end{gathered}
 $$
-Now it's easier to solve problem, with Newtion Decent Method, 
+Now it's easier to solve problem, with Newtion Decent Method, because of convex.
+With analyzing, the solve of above has a differentce 
