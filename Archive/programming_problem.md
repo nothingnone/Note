@@ -36,10 +36,10 @@ $$
 \begin{gathered}
 V_{combine} = \sum{a_i \cdot V_i}, \\
 a \ge 0 \ and \ V_i \ \text{is normal vector of }g_i(X), \\
-X \in \
+X \in \cap{\{g_i(X) = 0 \}}
 \end{gathered}
 $$
-
+$\qquad$Because $X$ in solve zone is 
 $\qquad$ 
 
 
