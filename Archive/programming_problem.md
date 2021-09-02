@@ -80,3 +80,9 @@ This can reduce computation. It can be derived easily.
 
 # Interior Point Method
 ## principle
+### obstacle function method
+Key idea is very simple, turn strict constraints into soft. 
+$$
+\begin
+g(X) \ge 0 h(X)=0
+$$
