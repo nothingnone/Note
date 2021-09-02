@@ -64,5 +64,12 @@ private:
 
 ```
 ```cpp
-enum Stat
+enum State{
+A,
+B=3,
+C	// 4
+};
+State(0) == A == State::A 
+int i = A;	// ok
+State s = 0;	// syntax error
 ```
