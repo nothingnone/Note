@@ -39,7 +39,12 @@ a \ge 0 \ and \ V_i \ \text{is normal vector of }g_i(X), \\
 X \in \cap{\{g_i(X) = 0 \}}
 \end{gathered}
 $$
-Because $X$ in solve zone is not differentiable, so all vector meet above can be considered as "normal vector".
+Because $X$ in solve zone is not differentiable, so all vector meet above can be considered as "normal vector". The origin now expand to following.
+$$
+\begin{gathered}
+f'(X) = \sum{a \cdot g'_i(X)},\ a_i \ge 0
+\end{gathered}
+$$
 
 
 
