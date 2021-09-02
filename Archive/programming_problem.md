@@ -30,8 +30,8 @@ $$
 - visualize
 ![probelm-graph](../Imgs/nolinear-programming/contraint-programming-graph.png)
 According to graph, the solve must be at edge of $f(X)$ and $g_{i}(X)$ or $h_i(X)$ where normal vetor of $f(X)$ and $g_{i}(X)$ or $h_i(X)$ in opposite direction. Considering 
-$$  h_i(X) = 0 \  \text{equal to} \   h_i(X) \ge 0 \ and \ -h_i(X) \ge 0 $$
-<>
+$$  h_i(X) = 0 \  \text{equal to} \   h_i(X) \ge 0 \ and \ -h_i(X) \ge 0 \right{} $$
+
 
 
 - principle
