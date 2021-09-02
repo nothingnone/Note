@@ -103,8 +103,11 @@ h_i(X) = 0 \\
 g_i(X) \ge 0 \\
 \tau \to 0
 \end{cases} \\
-Conclusion: L(X_0) = f(X_)
+\text{Analyzing Conclusion}: L(X_0) = f(X_{real})-\tau
 \end{gathered}
 $$
 Now it's easier to solve problem, with Newtion Decent Method, because of convex.
-With analyzing, the solve of above has a differentce 
+The difference between solve and real solve is called **"dual interval"**.
+Tips: to converge, decent $\tau$ slowly.
+
+### Origin Dul
