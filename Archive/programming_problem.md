@@ -129,4 +129,4 @@ g_i(X) \ge 0 \\
 \text{Same as above, Analyzing Conclusion}: L(X_0) = f(X_{real})-\tau
 \end{gathered}
 $$
-Compare with obstacle function method(OFM), Origin Dual Interior Method(ODIM) use Newtion decent with variable $X,b,\mu$ ,keeping $\mu$ meet condition. All decent in one loop.As for obstacle function method, decent $\tau$ and execute a loop, 
+Compare with obstacle function method(OFM), Origin Dual Interior Method(ODIM) use Newtion decent with variable $X,b,\mu$ ,keeping $\mu$ meet condition. All decent in one loop.As for obstacle function method, in decent $\tau$ loop executing $X,b$ decent loop, seems has more compution. However, while $\tau$ decent, less loop will needed to decent $X,b$. Same principle, different methods, How can
