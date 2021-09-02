@@ -68,11 +68,11 @@ h_{i}(X) = 0
 ## strong dual problem
 According to above, we can transform origin problem to following when $f(X)$ is convex, and $g''_i(X),h''_i(X)$ is 0.
 $$\begin{gathered}
-min \mathcal{L}(X)=   f(X)-ag_i(X)-b_ih(X), \text{ for all a,b}
+min \mathcal{L}(X)=   f(X)-ag_i(X)-b_ih(X), \text{ for all } a \ge 0,b
 \end{gathered}$$
 The above is convex, so the local minimum is global minimum. QP(Quadratic Programming) problem, SVM are 
 classic strong dual problem. Have following equation.
 $$
-\min_{x}\max_{a,b} \mathcal{L}(X) = 
-
+\min_{x}\max_{a,b} \mathcal{L}(X) = \max_{a,b}\min_{x} \mathcal{L}(X)
 $$
+This can reduce computation.
