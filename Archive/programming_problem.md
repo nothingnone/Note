@@ -76,13 +76,16 @@ $$
 \min_{x}\max_{a,b} \mathcal{L}(X) = \max_{a,b}\min_{x} \mathcal{L}(X)
 $$
 This can reduce computation. It can be derived easily.
-强对偶成立的充分非必要条件--slater条件.若存在X使所有的不等式约束都严格满足(不等式不取等号),则强对偶成立。
+sufficient but not necessary condition of strong dual problem--slater condition.
+Exist $X$, makes all $g_i(X)>0$.
 
 # Interior Point Method
 ## principle
 ### obstacle function method
 Key idea is very simple, turn strict constraints into soft. 
 $$
-\begin
-g(X) \ge 0 h(X)=0
+\begin{gathered}
+g(X) \ge 0 \ \\
+h(X)=0
+\end{gathered}
 $$
