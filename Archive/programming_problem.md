@@ -78,4 +78,5 @@ $$
 This can reduce computation. It can be derived easily.
 强对偶成立的充分非必要条件--slater条件.若存在X使所有的不等式约束都严格满足(不等式不取等号),则强对偶成立。
 
-# 
+# Interior Point Method
+## principle
