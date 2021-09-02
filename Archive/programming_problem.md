@@ -42,7 +42,7 @@ $$
 Because $X$ in solve zone is not differentiable, so all vector meet above can be considered as "normal vector". The origin now expand to following.
 $$
 \begin{gathered}
-f'(X) = \sum{a \cdot g'_i(X)},\ a_i \ge 0
+f'(X) = \sum{a_i \cdot g'_i(X)},\ a_i \ge 0
 \end{gathered}
 $$
 
@@ -50,8 +50,8 @@ $$
 
 
 ## principle
-According to above, we can easily get constraints of solve, but how can we define which $i$ of $g_{i}(X)$ is the actice edge? We can find that if it is not active, w don't need to constraint it, we can give it a weight 0.
-Now, the optimizw solve must meet following constraints.
+According to above, we can easily get constraints of solve, but how can we define which $i$ of $g_{i}(X)$ is the actice edge? We can find that if it is not active, we don't need to constraint it, we can give it a weight 0.
+Now, the optimize solve must meet following constraints.
 We can solve them to get potential solution.
 $$\begin{cases}
 f'(X)-a_i \cdot h'(X)-b_i \cdot g'(X)=0
@@ -66,9 +66,9 @@ h_{i}(X) = 0
 \end{cases}$$
 
 ## strong dual problem
-According to above, we can transform origin problem to following.
+According to above, we can transform origin problem to following when $f(X)$ is convex, and $g''_i(X)$
 $$\begin{gathered}
-min \  f(X)-ag(X)
+min \  f(X)-ag_i(X)-b_ih(X)
 \end{gathered}$$
 
 
