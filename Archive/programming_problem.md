@@ -86,6 +86,6 @@ Key idea is very simple, turn strict constraints into soft.
 $$
 \begin{gathered}
 g(X) \ge 0 \implies -\tau \cdot ln(g(X)), \tau \to 0 \\
-h(X)=0 \implies 
+h(X)=0 \implies (h(X))^{\frac{2}{\tau}},\tau \to 0
 \end{gathered}
 $$
