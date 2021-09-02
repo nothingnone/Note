@@ -119,11 +119,13 @@ min f(X) \implies L(X)= min\ f(X)-\tau ln(g_i(X)) \\
 h_i(X) = 0 \\
 \text{now KKT condition is easier to solve without loose weights} \  a \\
 \begin{cases}
-\frac{\partial L}{\partial X} =f'(X)-\tau\cdot \frac{g'_i(X)}{g_i(X)}-b\cdot h'(X)= 0 \\
+\frac{\partial L}{\partial X} =f'(X)-\mu\cdot g'_i(X)-b\cdot h'(X)= 0 \\
 \frac{\partial L}{\partial b} = h(X)=0 \\
 g_i(X) \ge 0 \\
-\tau \to 0
+\mu \ge 0 \\
+\tau \to 0 \\
+\mu_i(g_i(X)) = \tau
 \end{cases} \\
-\text{Analyzing Conclusion}: L(X_0) = f(X_{real})-\tau
+\text{Same as above, Analyzing Conclusion}: L(X_0) = f(X_{real})-\tau
 \end{gathered}
 $$
