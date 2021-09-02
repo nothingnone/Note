@@ -93,5 +93,9 @@ Besides, two punishment functions are convex.
 On the one hand, we can simply use decent method to find method.
 We can alse use Analytic Method to find solve, if $f(X),g(X),h(X)$ is easily to analyze.
 $$
-
+\begin{gathered}
+min f(X) \implies min\ f(X)-\tau ln(g_i(X)) \\
+h_i(X) = 0 \\
+\text{now KKT condition is easier to solve without }
+\end{gathered}
 $$
