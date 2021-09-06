@@ -6,3 +6,4 @@
 - [ ] 研究代码工厂设计模式的代码
 - [ ] 宏编写
 - [ ] protobuf ipc 进程间通讯
+- [ ] linux kernel
