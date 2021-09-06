@@ -7,3 +7,4 @@
 - [ ] 宏编写
 - [ ] protobuf ipc 进程间通讯
 - [ ] linux kernel
+- [ ] 编译原理
