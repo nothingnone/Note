@@ -7,6 +7,11 @@
 # name, object
 a = 1
 # py new a object--1, new a name--a, a point to 1.
+a = 2
+# py new a object--2, a point to 2.
+b = a
+# b point to a
+b = 1 
 
 
 ```
