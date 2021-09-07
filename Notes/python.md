@@ -48,7 +48,13 @@ id(a) # 000000..2 changed!
 # Good Example.
 a = [1,2,3]
 b = [a[2],a[1],a[0]]
-
+a is b # False
+a[0] is b[0] # True
+b[0] = -1 # b[0] id changed.
+a[0] is b[0] # False
+class A():
+	pass
+a = []
 ```
 
 ```python
