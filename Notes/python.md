@@ -63,6 +63,8 @@ a is b 		# False
 a[0] is b[0] 	# True
 a[0].x = 1 	# a[0] id not changed.
 b[0].x == 1
+# Besides, tuple is immutable, means the element id not change.
+# function in python, all parameters is name forw
 ```
 
 ```python
