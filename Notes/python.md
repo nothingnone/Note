@@ -3,7 +3,11 @@
 - assign and copy problem.
 - multi inherit problem
 
-```
+```python
+# name, object
+a = 1
+# py new a object--1, new a name--a, a point to 1.
+
 
 ```
 
