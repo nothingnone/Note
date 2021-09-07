@@ -76,8 +76,8 @@ b = copy.copy(a)
 b is a		# False
 b[0] is a[0]	# True
 b = copy.deepcopy(a)
-b is a
-
+b is a		# True
+b[0] is a[0]	# True
 ```
 
 ```python
