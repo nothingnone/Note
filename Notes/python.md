@@ -67,7 +67,16 @@ b[0].x == 1
 # function in python, all parameters is name forward into. Not copy.
 # if don't want operate on it. use copy(), [:], or other function that return copy value. 
 # But for container, copy the container, but the element is the same. Use deepcopy()
+# in python2, import copy
 # for example:
+a = [A()]
+b = a
+b is a 		# True
+b = copy.copy(a)
+b is a		# False
+b[0] is a[0]	# True
+b = copy.deepcopy(a)
+b is a
 
 ```
 
