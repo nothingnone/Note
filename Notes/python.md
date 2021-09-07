@@ -30,8 +30,8 @@ a is b # False
 # so why?  
 # In python, we call constant(int,float,str,tuple) immutable.
 # list, dict, container and class is mutable.
-# for constant, b = a mean b point to constant object as a point to.
-# for mutable, b = 
+# b = a , mean b point to object as a point to.
+# for mutable, change 'a' point to object, but not change which one, will not change 'a' point to. So a and b point to same object,  
 ```
 
 ```python
