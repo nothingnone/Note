@@ -3,6 +3,7 @@
 - assign and copy problem.
 - multi inherit problem
 
+### Name, Object
 ```python
 # name, object
 a = 1
@@ -35,26 +36,31 @@ a is b # False
 # Good example:
 a = 1
 b = 1
-a is b # True
+a is b 	# True
 a = []
 b = []
-a is b # False
+a is b 	# False
 a = []
-id(a) # 000000..1
+id(a) 	# 000000..1
 a.append(1)
-id(a) # 000000..1
+id(a) 	# 000000..1
 a = a[:]
-id(a) # 000000..2 changed!
+id(a) 	# 000000..2 changed!
 # Good Example.
 a = [1,2,3]
 b = [a[2],a[1],a[0]]
-a is b # False
-a[0] is b[0] # True
-b[0] = -1 # b[0] id changed.
-a[0] is b[0] # False
+a is b 		# False
+a[0] is b[0] 	# True
+b[0] = -1 # b[0] # id changed.
+a[0] is b[0] 	# False
 class A():
 	pass
-a = []
+a = [A(),A()]
+b = [a[0],b[1]]
+a is b # False
+a[0] is b[0] 	# True
+a[0].x = 1 	# a[0] id not changed.
+b[0].x == 1
 ```
 
 ```python
