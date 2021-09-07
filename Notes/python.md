@@ -40,7 +40,15 @@ a = []
 b = []
 a is b # False
 a = []
-a.append
+id(a) # 000000..1
+a.append(1)
+id(a) # 000000..1
+a = a[:]
+id(a) # 000000..2 changed!
+# Good Example.
+a = [1,2,3]
+b = [a[2],a[1],a[0]]
+
 ```
 
 ```python
