@@ -64,7 +64,11 @@ a[0] is b[0] 	# True
 a[0].x = 1 	# a[0] id not changed.
 b[0].x == 1
 # Besides, tuple is immutable, means the element id not change.
-# function in python, all parameters is name forward into. Not copy, if don't want operate on it. use copy(), [:], or other function that return a new value. But for container, 
+# function in python, all parameters is name forward into. Not copy.
+# if don't want operate on it. use copy(), [:], or other function that return copy value. 
+# But for container, copy the container, but the element is the same. Use deepcopy()
+# for example:
+
 ```
 
 ```python
