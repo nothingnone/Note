@@ -1,9 +1,9 @@
-### tips
+# tips
 - python '=' is alias.
 - assign and copy problem.
 - multi inherit problem
 
-### Name, Object
+# Name, Object
 ```python
 # name, object
 a = 1
@@ -27,12 +27,14 @@ a == [1,2]
 # now b point to a?
 # No!
 a = a[:]
-a is b # False
+a is b 	# False
 # so why?  
 # In python, we call constant(int,float,str,tuple) immutable.
 # list, dict, container and class is mutable.
 # b = a , mean b point to object as a point to.
-# for mutable, change 'a' point to object, but not change which one, will not change 'a' point to. So 'a' and 'b' point to same object. it seems that b is a.
+# for mutable, change 'a' point to object, 
+# but not change which one, will not change 'a' point to. 
+# So 'a' and 'b' point to same object. it seems that b is a.
 # Good example:
 a = 1
 b = 1
@@ -51,13 +53,13 @@ a = [1,2,3]
 b = [a[2],a[1],a[0]]
 a is b 		# False
 a[0] is b[0] 	# True
-b[0] = -1 # b[0] # id changed.
+b[0] = -1 	# b[0] id changed.
 a[0] is b[0] 	# False
 class A():
 	pass
 a = [A(),A()]
 b = [a[0],b[1]]
-a is b # False
+a is b 		# False
 a[0] is b[0] 	# True
 a[0].x = 1 	# a[0] id not changed.
 b[0].x == 1
@@ -73,7 +75,7 @@ dir(obj)	# return summary of obj, attributes and methods.
 help(obj)	# return manual of object, which is written by author.
 ```
 
-### Super, Multi inherit
+# Super, Multi inherit
 ```python
 class Child(parents):
 	super(Child, self) 	# py2, return refer to parent.
@@ -85,7 +87,7 @@ class child(parent1, parent2):
 # from sub to parent, wide-first, in turn, only once.
 ```
 
-### Decorator
+# Decorator
 ```python
 # origin
 def decorator(func):
