@@ -27,9 +27,11 @@ a == [1,2]
 # No!
 a = a[:]
 a is b # False
-# so why? 
-# b = a,  mean b point to the object as a point to. 
-# In python, we call constant unchangble
+# so why?  
+# In python, we call constant(int,float,str,tuple) immutable.
+# list, dict, container and class is mutable.
+# for constant, b = a mean b point to constant object as a point to.
+# for mutable, b = 
 ```
 
 ```python
