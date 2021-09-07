@@ -25,7 +25,11 @@ b.append(2)
 a == [1,2]
 # now b point to a?
 # No!
-
+a = a[:]
+a is b # False
+# so why? 
+# b = a,  mean b point to the object as a point to. 
+# In python, we call constant unchangble
 ```
 
 ```python
