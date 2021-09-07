@@ -31,7 +31,16 @@ a is b # False
 # In python, we call constant(int,float,str,tuple) immutable.
 # list, dict, container and class is mutable.
 # b = a , mean b point to object as a point to.
-# for mutable, change 'a' point to object, but not change which one, will not change 'a' point to. So a and b point to same object,  
+# for mutable, change 'a' point to object, but not change which one, will not change 'a' point to. So 'a' and 'b' point to same object. it seems that b is a.
+# Good example:
+a = 1
+b = 1
+a is b # True
+a = []
+b = []
+a is b # False
+a = []
+a.append
 ```
 
 ```python
