@@ -12,15 +12,19 @@ a = 2
 b = a
 # b point to a?
 b = 10
-a = ? # 2
+a == 2
 # or
 a = 10
-b = ? #2
+b == 2
 # b not point to a.
 a = []
 b = a
 a.append(1)
-b = ? # [1]
+b == [1]
+b.append(2)
+a == [1,2]
+# now b point to a?
+# No!
 
 ```
 
