@@ -10,9 +10,17 @@ a = 1
 a = 2
 # py new a object--2, a point to 2.
 b = a
-# b point to a
-b = 1 
-
+# b point to a?
+b = 10
+a = ? # 2
+# or
+a = 10
+b = ? #2
+# b not point to a.
+a = []
+b = a
+a.append(1)
+b = ? # [1]
 
 ```
 
