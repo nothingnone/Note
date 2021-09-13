@@ -1,8 +1,12 @@
 - Acc Target Select
 	- [ ] Carmaker
-	- [ ] first step: add short
-coordinate problem
-	- 
+	- [ ] add short distance lane predict.
+	- [ ] coordinate problem.
+	- [ ] Test in carmaker.
+	- [ ] medium distance todo.
+		- [ ] test dataset
+		- [ ] evaluate function.
+		- 
 
 - Acc follow target select, test data callback
 	- [x] read nullmax_pilot to make filter logic clear.
