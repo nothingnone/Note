@@ -7,7 +7,9 @@ int a;
 int a = 1;
 extern int a = 1;
 # above may cause redefined error.
+# attention! do not define in h
 ```
+
 # Preemptible, yield
 ```C++
 // memset(), memcpy(). cosume much and can't get too much time piece.
