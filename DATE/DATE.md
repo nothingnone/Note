@@ -1,7 +1,7 @@
 - Acc Target Select
 	- [ ] Carmaker
 	- [ ] add short distance lane predict.
-		- front steer angle = 
+		- front wheel angle = steer angle / 14.8 
 	- [ ] coordinate problem.
 	- [ ] Test in carmaker.
 	- [ ] medium distance todo.
