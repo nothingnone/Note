@@ -1,12 +1,12 @@
 # global variable
 ```c++
-# declare
+# declare (Only this!)
 extern int a;
 # define
 int a;
 int a = 1;
 extern int a = 1;
-# above may cause multi 
+# above may cause redefined error.
 ```
 # Preemptible, yield
 ```C++
@@ -31,7 +31,7 @@ void memcpyPreemptible(void * dest, void * src, size_t n) {
 }
 // same as memset().
 ```
-# class declare and define
+# class declare, define
 ```c++
 // constrution class. Danger.
 classA c = classA(param); // param constrution. explicit invoke.
@@ -50,7 +50,7 @@ boost::shared_ptr<classA> c = boost::make_shared<classA>(param);
 // special
 boost::shared_ptr<int[]> c = boost::make_shared<int[]>(size);
 ```
-
+# vector
 ```cpp
 # vector func
 std::vector::size 	// num of elements.
@@ -58,6 +58,7 @@ std::vector::capacity 	// size of memory applied.
 std::vector::clear()	// delete all elem, set size 0, but retain capacity. delte object and call destruction, won't free pointer point to.
 std::vector::reserve()  // set capacity.
 ```
+# container's elements
 ```cpp
 // container required copy constructor and copy assign.
 // if allocator provided prefered
@@ -74,6 +75,7 @@ private:
 };
 
 ```
+# enum declare, define
 ```cpp
 enum State{
 A,
