@@ -1,3 +1,14 @@
+# global variable
+```c++
+# declare
+extern int a;
+# define
+int a;
+int a = 1;
+extern int a = 1;
+# above may cause multi 
+```
+# Preemptible, yield
 ```C++
 // memset(), memcpy(). cosume much and can't get too much time piece.
 void memcpyPreemptible(void * dest, void * src, size_t n) {
@@ -20,7 +31,7 @@ void memcpyPreemptible(void * dest, void * src, size_t n) {
 }
 // same as memset().
 ```
-
+# class declare and define
 ```c++
 // constrution class. Danger.
 classA c = classA(param); // param constrution. explicit invoke.
