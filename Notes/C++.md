@@ -7,7 +7,7 @@ int a;
 int a = 1;
 extern int a = 1;
 # above may cause redefined error.
-# attention! do not define in h
+# attention! do not define in header file. Even use #param once.
 ```
 
 # Preemptible, yield
