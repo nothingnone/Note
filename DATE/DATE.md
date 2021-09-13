@@ -1,12 +1,14 @@
 - Acc Target Select
 	- [ ] Carmaker
 	- [ ] add short distance lane predict.
+		- front steer angle = 
 	- [ ] coordinate problem.
 	- [ ] Test in carmaker.
 	- [ ] medium distance todo.
 		- [ ] test dataset
 		- [ ] evaluate function.
-		- 
+		- [ ] change lane and trajectory joint
+		- [ ] 
 
 - Acc follow target select, test data callback
 	- [x] read nullmax_pilot to make filter logic clear.
