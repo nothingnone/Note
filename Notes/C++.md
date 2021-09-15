@@ -46,7 +46,7 @@ public:
   A(int i =1);
 }
 */
-classA c(param);  // implicitly incoke. in stack. right value.
+classA c(param);  // implicitly invoke. in stack. right value.
 classA *c = new classA(param);  // new in heap
 boost::shared_ptr<classA> c = boost::make_shared<classA>(param);
 // special
