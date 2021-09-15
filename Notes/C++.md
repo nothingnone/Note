@@ -48,6 +48,11 @@ public:
 */
 classA c(param);  // explicitly invoke. in stack.
 classA *c = new classA(param);  // new in heap
+class c(c1);	// copy construct
+class c = c1;	// cop
+class c1,c;
+c = c1;
+// shared pointer
 boost::shared_ptr<classA> c = boost::make_shared<classA>(param);
 // special
 boost::shared_ptr<int[]> c = boost::make_shared<int[]>(size);
