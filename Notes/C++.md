@@ -46,8 +46,8 @@ public:
   A(int i =1);
 }
 */
-classA c(param);  // explicitly invoke. in stack.
-class 
+classA c(param);  	// explicitly invoke. in stack.
+classA c();		// error! won't invoke construction. new a class 
 classA *c = new classA(param);  // new in heap
 class c(c1);	// copy construct
 class c = c1;	// assign copy construct
