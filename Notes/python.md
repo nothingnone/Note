@@ -1,7 +1,84 @@
-### tips
+# tips
 - python '=' is alias.
 - assign and copy problem.
 - multi inherit problem
+
+# Name, Object
+```python
+# name, object
+a = 1
+# py new a object--1, new a name--a, a point to 1.
+a = 2
+# py new a object--2, a point to 2.
+b = a
+# b point to a?
+b = 10
+a == 2
+# or
+a = 10
+b == 2
+# b not point to a.
+a = []
+b = a
+a.append(1)
+b == [1]
+b.append(2)
+a == [1,2]
+# now b point to a?
+# No!
+a = a[:]
+a is b 	# False
+# so why?  
+# In python, we call constant(int,float,str,tuple) immutable.
+# list, dict, container and class is mutable.
+# b = a , mean b point to object as a point to.
+# for mutable, change 'a' point to object, 
+# but not change which one, will not change 'a' point to. 
+# So 'a' and 'b' point to same object. it seems that b is a.
+# Good example:
+a = 1
+b = 1
+a is b 	# True
+a = []
+b = []
+a is b 	# False
+a = []
+id(a) 	# 000000..1
+a.append(1)
+id(a) 	# 000000..1
+a = a[:]
+id(a) 	# 000000..2 changed!
+# Good Example.
+a = [1,2,3]
+b = [a[2],a[1],a[0]]
+a is b 		# False
+a[0] is b[0] 	# True
+b[0] = -1 	# b[0] id changed.
+a[0] is b[0] 	# False
+class A():
+	pass
+a = [A(),A()]
+b = [a[0],b[1]]
+a is b 		# False
+a[0] is b[0] 	# True
+a[0].x = 1 	# a[0] id not changed.
+b[0].x == 1
+# Besides, tuple is immutable, means the element id not change.
+# function in python, all parameters is name forward into. Not copy.
+# if don't want operate on it. use copy(), [:], or other function that return copy value. 
+# But for container, copy the container, but the element is the same. Use deepcopy()
+# in python2, import copy
+# for example:
+a = [A()]
+b = a
+b is a 		# True
+b = copy.copy(a)
+b is a		# False
+b[0] is a[0]	# True
+b = copy.deepcopy(a)
+b is a		# True
+b[0] is a[0]	# True
+```
 
 ```python
 # add module search path
@@ -13,7 +90,7 @@ dir(obj)	# return summary of obj, attributes and methods.
 help(obj)	# return manual of object, which is written by author.
 ```
 
-### Super, Multi inherit
+# Super, Multi inherit
 ```python
 class Child(parents):
 	super(Child, self) 	# py2, return refer to parent.
@@ -25,7 +102,7 @@ class child(parent1, parent2):
 # from sub to parent, wide-first, in turn, only once.
 ```
 
-### Decorator
+# Decorator
 ```python
 # origin
 def decorator(func):
