@@ -9,3 +9,4 @@
 - [ ] linux kernel
 - [ ] c++ 编译
 - [ ] google 编程规范
+- [ ] python性能 多进程，ctype
