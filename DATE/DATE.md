@@ -9,6 +9,7 @@
 			- [ ] increase trajectory length to compute history delta_y. Longer obstacle detect distance 100m is perfered. Considering GuoDong's code.
 			- [ ] select valid trajectories from obstacle trackers.
 				- [ ] add historical_dy and same_forward_direction func in obstacle tracker.
+				- [ ] add trajectories quality.
 				- logics: long enough, same direction, close in history.
 				- what about New obstacle but has not goes to
 		- [ ] evaluate function.
