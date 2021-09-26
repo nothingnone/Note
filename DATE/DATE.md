@@ -2,10 +2,11 @@
 	- [x] Carmaker
 	- [x] add short distance lane predict.
 		- front wheel angle = steer angle / 14.8 
-	- [ ] coordinate problem.
+	- [x] coordinate problem.
 	- [x] Test in carmaker.
-	- [ ] medium distance todo.
-		- [ ] test dataset
+	- [ ] medium distance.
+		- [ ] Select traffic cars trajectories.
+			- [ ] increase trajectory length to compute history delta_y
 		- [ ] evaluate function.
 		- [ ] change lane and trajectory joint
 		- [ ] 
