@@ -6,7 +6,9 @@
 	- [x] Test in carmaker.
 	- [ ] medium distance.
 		- [ ] Select traffic cars trajectories.
-			- [ ] increase trajectory length to compute history delta_y. Longer obstacle detect distance 100m is perfered.
+			- [ ] increase trajectory length to compute history delta_y. Longer obstacle detect distance 100m is perfered. Considering GuoDong's code.
+			- [ ] select valid trajectories from obstacle trackers.
+				- logics: long enough, same direction, close in history.
 		- [ ] evaluate function.
 		- [ ] change lane and trajectory joint
 		- [ ] 
