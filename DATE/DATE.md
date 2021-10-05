@@ -25,3 +25,8 @@ left/right front car very close or ttc(time distance) is small.
 
 - planner offline test
 	- [ ] some topics need to be added.
+
+- Freecell game
+	- heuristic prior search
+	- heuristic net func。 To distance。 Train step froward。
+	- 
