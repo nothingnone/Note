@@ -19,7 +19,7 @@ $$
 =& \min_{A,B} g(A) \\
 \end{aligned} \\
 \text{it's a convex problem!} \\
-\frac{\partial g(A)}{\partial A} = 
+\frac{\partial g(A)}{\partial A} = (-X)^T \c
 
 \end{gathered}
 $$
