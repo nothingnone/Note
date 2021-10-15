@@ -10,5 +10,7 @@ $$
 ## derivation
 $$
 \begin{gathered}
+\sum{(Y-AX-B)^2} &=& (Y-AX-B)^T \cdot (Y-AX-B) \\
+&=&
 \end{gathered}
 $$
