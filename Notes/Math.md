@@ -1,6 +1,6 @@
 ### linear regression
 $$
 \begin{gathered}
-\min_{\substack{A}}
+\min_A 
 \end{gathered}
 $$
