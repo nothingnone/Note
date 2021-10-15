@@ -12,10 +12,14 @@ A = [c_n, c_{n-1}, ...,c_0] \\
 $$
 ## derivation
 $$
+\begin{gathered}
 \begin{aligned}
 &\min_{A,B} \sum{(Y-AX)^2} \\
 =& \min_{A,B} (Y-AX)^T \cdot (Y-AX) \\
-=& \min_{A,B} g(A)
-\frac{\delta g(A)}{}
+=& \min_{A,B} g(A) \\
 \end{aligned}
+\begin{gathered}
+\frac{\partial g(A)}{\partial A}
+\end{gathered}
+\end{gathered}
 $$
