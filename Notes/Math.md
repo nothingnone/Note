@@ -22,7 +22,8 @@ $$
 \begin{aligned}
 &\frac{\partial g(A)}{\partial A} \\ 
 =& (-X)^T \cdot (Y-X \cdot A) + (Y-X \cdot A)^T  \cdot (-X) \\
-=& 
+=& -2 X^T \cdot (Y-X \cdot A) = 0 \\
+
 \end{aligned} \\
 
 \end{gathered}
