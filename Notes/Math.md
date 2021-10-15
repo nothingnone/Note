@@ -1,7 +1,8 @@
 ### linear regression
 $$
 \begin{gathered}
-f(x) = AX+B = Y \\
-\min_A 
+f(x) = Ax+B = y \\
+given \  X,Y \\ 
+\min_{A,B}{\sum{(Y-AX-B)^2}}\\
 \end{gathered}
 $$
