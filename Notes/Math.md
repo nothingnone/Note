@@ -1,1 +1,6 @@
-### linear regression compute
+### linear regression
+$$
+\begin{gathered}
+min_{A}
+\end{gathered}
+$$
