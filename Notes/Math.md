@@ -9,9 +9,6 @@ given \  X,Y \\
 $$
 ## derivation
 $$
-\begin{equation}
-
-\end{equation}
-$$
 \begin{gathered}
-\end{}gathered
+\end{gathered}
+$$
