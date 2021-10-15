@@ -21,9 +21,10 @@ $$
 \text{it's a convex problem.} \\
 \begin{aligned}
 &\frac{\partial g(A)}{\partial A} \\ 
-=& (-X)^T \cdot (Y-X \cdot A) + (Y-X \cdot A)^T  \cdot (-X) \\
+=& (-X)^T \cdot (Y-X \cdot A) + ((Y-X \cdot A)^T  \cdot (-X))^T \\
 =& -2 X^T \cdot (Y-X \cdot A) = 0 \\
 \end{aligned} \\
-A =X^T \cdot Y(X^T \cdot X)^{-1}
+A = (X^T \cdot X)^{-1} \cdot X^T \cdot Y
 \end{gathered}
 $$
+## Note
