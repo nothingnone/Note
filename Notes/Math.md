@@ -2,15 +2,16 @@
 ## principle
 $$
 \begin{gathered}
-f(x) = Ax+B = y \\
+f(x) = c_n X = y \\
 given \  X,Y \\ 
 \min_{A,B}{\sum{(Y-AX-B)^2}}
 \end{gathered}
 $$
 ## derivation
 $$
-\begin{gathered}
-\sum{(Y-AX-B)^2} &=& (Y-AX-B)^T \cdot (Y-AX-B) \\
-&=&
-\end{gathered}
+\begin{aligned}
+&\min_{A,B} \sum{(Y-AX-B)^2} \\
+=& \min_{A,B} (Y-AX-B)^T \cdot (Y-AX-B) \\
+=& 
+\end{aligned}
 $$
