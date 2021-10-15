@@ -17,9 +17,8 @@ $$
 &\min_{A,B} \sum{(Y-AX)^2} \\
 =& \min_{A,B} (Y-AX)^T \cdot (Y-AX) \\
 =& \min_{A,B} g(A) \\
-\end{aligned}
-\begin{gathered}
-\frac{\partial g(A)}{\partial A}
-\end{gathered}
+\end{aligned} \\
+\frac{\partial g(A)}{\partial A} = 
+
 \end{gathered}
 $$
