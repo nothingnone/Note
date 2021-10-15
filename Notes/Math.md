@@ -13,3 +13,5 @@ $$
 
 \end{equation}
 $$
+\begin{gathered}
+\end{}gathered
