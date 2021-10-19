@@ -12,7 +12,9 @@
 # practice
 - construction may fail, check if pointer is nullptr.
 - circular reference
-	- it's normal that 
+	- it's normal that two level class both have pointer of another.
+	- if use smart pointer to manage their lifetime, this cause circular reference, they will never be recycled.
+	- use weak_ptr, this will not increase refer count.
 
 
 # Smart pointer
