@@ -1,6 +1,7 @@
 # Code
 - function is stack.
 - class = struct +  .
+- 
 
 
 
@@ -9,4 +10,5 @@
 - 
 
 # run
+- Multi thread, or **implicit**.
 - 
