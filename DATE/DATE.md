@@ -2,10 +2,17 @@
 	- [x] Carmaker
 	- [x] add short distance lane predict.
 		- front wheel angle = steer angle / 14.8 
-	- [ ] coordinate problem.
+	- [x] coordinate problem.
 	- [x] Test in carmaker.
-	- [ ] medium distance todo.
-		- [ ] test dataset
+	- [ ] medium distance.
+		- [ ] Select traffic cars trajectories.
+			- [ ] increase trajectory length to compute history delta_y. Longer obstacle detect distance 100m is perfered. Considering GuoDong's code.
+			- [ ] select valid trajectories from obstacle trackers.
+				- [ ] add historical_dy and same_forward_direction func in obstacle tracker.
+				- [ ] add trajectories quality.
+				- [ ] fusion, how to compute s, st. Pay attention.
+				- logics: long enough, same direction, close in history.
+				- what about New obstacle but has not goes to
 		- [ ] evaluate function.
 		- [ ] change lane and trajectory joint
 		- [ ] 
@@ -30,3 +37,4 @@ left/right front car very close or ttc(time distance) is small.
 	- heuristic prior search
 	- heuristic net func。 To distance。 Train step froward。
 	- 
+
