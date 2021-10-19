@@ -16,6 +16,6 @@
 
 # Smart pointer
 - circular reference
-	- it's normal that two level class both have pointer of another.if use smart pointer to manage their lifetime, this cause circular reference, they will never be recycled.
+	- it's normal that two level class both have pointer of another.if use smart pointer to manage their lifetime, this cause circular reference, they will never be sweeped.
 	- use weak_ptr, this will not increase refer count.
-	- this also happens in python. 
+	- this also happens in python. use mark-sweep, if can't reach object from alive object, sweep
