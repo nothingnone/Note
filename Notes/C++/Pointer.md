@@ -12,7 +12,7 @@
 # practice
 - construction may fail, check if pointer is nullptr.
 - circular reference
-	- 
+	- it's normal that 
 
 
 # Smart pointer
