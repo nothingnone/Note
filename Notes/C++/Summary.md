@@ -12,4 +12,13 @@
 
 # run
 - Multi thread, or **implicit**.
-- 
+
+# Architexture
+- Margin
+	- wrapper, interface, baseclass
+	- 
+- info stream
+	- short
+	- clear
+	- sync
+	-
