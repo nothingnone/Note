@@ -1,7 +1,8 @@
 # Code
-- function is stack.
+- object = memory 
+- function is **stack**.
 - class = struct +  .
-- 
+- (implicit) multi thread, notice "hot spot". **Mark It**.
 
 
 
