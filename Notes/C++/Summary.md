@@ -21,4 +21,5 @@
 	- short
 	- clear
 	- sync
-	-
+- duty
+	- algorithm
