@@ -15,11 +15,9 @@
 
 # Architexture
 - Margin
-	- wrapper, interface, baseclass
+	- wrapper, interface, inherit
 	- 
 - info stream
-	- short
-	- clear
+	- direct, short, clear.
 	- sync
-- duty
-	- algorithm
+- lifetime

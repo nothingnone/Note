@@ -11,6 +11,9 @@
 
 # practice
 - construction may fail, check if pointer is nullptr.
+- loop refer
+	- 
+
 
 # Smart pointer
 
